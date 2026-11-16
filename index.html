@@ -1,0 +1,1612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowmula Muqaddam - Metallic Gold & Emerald Edition</title>
+    <style>
+/* Precompiled utility CSS (replaces the Tailwind CDN; no runtime dependency) */
+*,::before,::after{box-sizing:border-box;border:0 solid #e5e7eb}html{line-height:1.5;-webkit-text-size-adjust:100%}body,h1,h2,h3,h4,p{margin:0}h1,h2,h3,h4{font-size:inherit;font-weight:inherit}button,select,input{font:inherit;color:inherit;margin:0;padding:0;background:transparent}button{cursor:pointer;text-align:inherit}select{appearance:auto}a{color:inherit;text-decoration:none}img{display:block;max-width:100%;height:auto}i{font-style:normal}button:disabled{cursor:default}
+.-translate-x-1\/2{transform:translateX(-50%)}
+.backdrop-blur-md{-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+.bg-amber-400{background-color:#fbbf24}
+.bg-emeraldCard{background-color:#0d2d21}
+.bg-emeraldDark{background-color:#04140e}
+.bg-emeraldDark\/80{background-color:rgba(4,20,14,0.8)}
+.bg-emeraldDark\/90{background-color:rgba(4,20,14,0.9)}
+.bg-emeraldDeep\/95{background-color:rgba(8,34,24,0.95)}
+.bg-goldBase\/20{background-color:rgba(223,182,83,0.2)}
+.bg-white{background-color:#fff}
+.block{display:block}
+.border{border-width:1px}
+.border-goldBase\/20{border-color:rgba(223,182,83,0.2)}
+.border-goldBase\/30{border-color:rgba(223,182,83,0.3)}
+.border-goldBase\/40{border-color:rgba(223,182,83,0.4)}
+.border-goldBright{border-color:#ebd589}
+.border-t{border-top-width:1px}
+.border-x{border-left-width:1px;border-right-width:1px}
+.bottom-6{bottom:1.5rem}
+.cursor-pointer{cursor:pointer}
+.duration-200{transition-duration:.2s}
+.duration-300{transition-duration:.3s}
+.fixed{position:fixed}
+.flex{display:flex}
+.flex-col{flex-direction:column}
+.focus\:outline-none{outline:2px solid transparent;outline-offset:2px}
+.font-bold{font-weight:700}
+.font-extrabold{font-weight:800}
+.font-medium{font-weight:500}
+.font-mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+.font-semibold{font-weight:600}
+.gap-1{gap:0.25rem}
+.gap-1\.5{gap:0.375rem}
+.gap-2{gap:0.5rem}
+.gap-2\.5{gap:0.625rem}
+.gap-3{gap:0.75rem}
+.gap-4{gap:1rem}
+.grid{display:grid}
+.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}
+.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.grid-cols-6{grid-template-columns:repeat(6,minmax(0,1fr))}
+.h-1\.5{height:0.375rem}
+.h-10{height:2.5rem}
+.h-24{height:6rem}
+.h-8{height:2rem}
+.h-full{height:100%}
+.inline-block{display:inline-block}
+.italic{font-style:italic}
+.items-center{align-items:center}
+.items-start{align-items:flex-start}
+.justify-around{justify-content:space-around}
+.justify-between{justify-content:space-between}
+.justify-center{justify-content:center}
+.justify-start{justify-content:flex-start}
+.leading-loose{line-height:2}
+.leading-snug{line-height:1.375}
+.left-1\/2{left:50%}
+.max-h-\[180px\]{max-height:180px}
+.max-h-\[300px\]{max-height:300px}
+.max-w-md{max-width:28rem}
+.mb-1{margin-bottom:0.25rem}
+.mb-2{margin-bottom:0.5rem}
+.mb-3{margin-bottom:0.75rem}
+.mb-5{margin-bottom:1.25rem}
+.min-h-\[360px\]{min-height:360px}
+.min-h-screen{min-height:100vh}
+.mt-0\.5{margin-top:0.125rem}
+.mt-2{margin-top:0.5rem}
+.mt-3{margin-top:0.75rem}
+.mt-4{margin-top:1rem}
+.mt-5{margin-top:1.25rem}
+.mx-auto{margin-left:auto;margin-right:auto}
+.my-auto{margin-top:auto;margin-bottom:auto}
+.opacity-70{opacity:.7}
+.overflow-hidden{overflow:hidden}
+.overflow-y-auto{overflow-y:auto}
+.p-1{padding:0.25rem}
+.p-2{padding:0.5rem}
+.p-3{padding:0.75rem}
+.p-4{padding:1rem}
+.p-5{padding:1.25rem}
+.p-6{padding:1.5rem}
+.pb-12{padding-bottom:3rem}
+.pr-1{padding-right:0.25rem}
+.pt-3{padding-top:0.75rem}
+.px-1{padding-left:0.25rem;padding-right:0.25rem}
+.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}
+.px-3{padding-left:0.75rem;padding-right:0.75rem}
+.px-4{padding-left:1rem;padding-right:1rem}
+.px-5{padding-left:1.25rem;padding-right:1.25rem}
+.px-6{padding-left:1.5rem;padding-right:1.5rem}
+.py-1{padding-top:0.25rem;padding-bottom:0.25rem}
+.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}
+.py-2{padding-top:0.5rem;padding-bottom:0.5rem}
+.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}
+.py-3{padding-top:0.75rem;padding-bottom:0.75rem}
+.py-6{padding-top:1.5rem;padding-bottom:1.5rem}
+.relative{position:relative}
+.ring-2{box-shadow:0 0 0 2px var(--ring,rgba(223,182,83,.5))}
+.ring-goldBase\/50{--ring:rgba(223,182,83,0.5)}
+.rounded{border-radius:.25rem}
+.rounded-2xl{border-radius:1rem}
+.rounded-3xl{border-radius:1.5rem}
+.rounded-full{border-radius:9999px}
+.rounded-lg{border-radius:.5rem}
+.rounded-xl{border-radius:.75rem}
+.scale-110{transform:scale(1.1)}
+.shadow{box-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px -1px rgba(0,0,0,.1)}
+.shadow-2xl{box-shadow:0 25px 50px -12px rgba(0,0,0,.25)}
+.shadow-lg{box-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1)}
+.shadow-md{box-shadow:0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.1)}
+.shadow-xl{box-shadow:0 20px 25px -5px rgba(0,0,0,.1),0 8px 10px -6px rgba(0,0,0,.1)}
+.space-y-1>:not([hidden])~:not([hidden]){margin-top:0.25rem}
+.space-y-3>:not([hidden])~:not([hidden]){margin-top:0.75rem}
+.space-y-4>:not([hidden])~:not([hidden]){margin-top:1rem}
+.space-y-5>:not([hidden])~:not([hidden]){margin-top:1.25rem}
+.sticky{position:sticky}
+.text-2xl{font-size:1.5rem;line-height:2rem}
+.text-3xl{font-size:1.875rem;line-height:2.25rem}
+.text-\[10px\]{font-size:10px}
+.text-\[11px\]{font-size:11px}
+.text-amber-100{color:#fef3c7}
+.text-amber-100\/70{color:rgba(254,243,199,0.7)}
+.text-amber-200{color:#fde68a}
+.text-amber-200\/60{color:rgba(253,230,138,0.6)}
+.text-amber-200\/70{color:rgba(253,230,138,0.7)}
+.text-amber-200\/80{color:rgba(253,230,138,0.8)}
+.text-base{font-size:1rem;line-height:1.5rem}
+.text-center{text-align:center}
+.text-emerald-100\/70{color:rgba(209,250,229,0.7)}
+.text-emerald-100\/80{color:rgba(209,250,229,0.8)}
+.text-emerald-100\/90{color:rgba(209,250,229,0.9)}
+.text-emeraldDark{color:#04140e}
+.text-goldBase{color:#dfb653}
+.text-goldBase\/80{color:rgba(223,182,83,0.8)}
+.text-goldBright{color:#ebd589}
+.text-gray-900{color:#111827}
+.text-left{text-align:left}
+.text-lg{font-size:1.125rem;line-height:1.75rem}
+.text-red-400{color:#f87171}
+.text-red-500{color:#ef4444}
+.text-right{text-align:right}
+.text-slate-950{color:#020617}
+.text-sm{font-size:0.875rem;line-height:1.25rem}
+.text-xl{font-size:1.25rem;line-height:1.75rem}
+.text-xs{font-size:0.75rem;line-height:1rem}
+.top-0{top:0}
+.tracking-wide{letter-spacing:.025em}
+.tracking-wider{letter-spacing:.05em}
+.tracking-widest{letter-spacing:.1em}
+.transition{transition-property:color,background-color,border-color,opacity,box-shadow,transform,filter;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}
+.transition-all{transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}
+.transition-opacity{transition-property:opacity;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}
+.uppercase{text-transform:uppercase}
+.w-10{width:2.5rem}
+.w-24{width:6rem}
+.w-8{width:2rem}
+.w-full{width:100%}
+.z-40{z-index:40}
+.z-50{z-index:50}
+.hidden{display:none}
+.disabled\:opacity-40:disabled{opacity:.4}
+.focus\:border-goldBright:focus{border-color:#ebd589}
+.hover\:bg-amber-300:hover{background-color:#fcd34d}
+.hover\:bg-gray-100:hover{background-color:#f3f4f6}
+.hover\:border-goldBright:hover{border-color:#ebd589}
+.hover\:brightness-110:hover{filter:brightness(1.1)}
+.hover\:scale-105:hover{transform:scale(1.05)}
+.hover\:text-goldBright:hover{color:#ebd589}
+.hover\:text-goldLight:hover{color:#f5e6a3}
+@media (min-width:640px){
+.sm\:flex-row{flex-direction:row}
+.sm\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.sm\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.sm\:grid-cols-9{grid-template-columns:repeat(9,minmax(0,1fr))}
+.sm\:max-w-xl{max-width:36rem}
+.sm\:text-4xl{font-size:2.25rem;line-height:2.5rem}
+.sm\:text-left{text-align:left}
+.sm\:text-lg{font-size:1.125rem;line-height:1.75rem}
+.sm\:text-sm{font-size:0.875rem;line-height:1.25rem}
+.sm\:text-xl{font-size:1.25rem;line-height:1.75rem}
+.sm\:w-auto{width:auto}
+}
+</style>
+    <!-- Fonts & FontAwesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+
+    <style>
+        body {
+            background-color: #04140e;
+            background-image: 
+                radial-gradient(circle at 50% 0%, rgba(18, 56, 42, 0.6) 0%, transparent 75%),
+                radial-gradient(circle at 50% 100%, rgba(8, 34, 24, 0.8) 0%, transparent 70%);
+            font-family: 'Inter', sans-serif;
+            color: #f1f5f9;
+        }
+
+        .font-arabic {
+            font-family: 'Amiri', serif;
+            line-height: 2.2;
+        }
+
+        /* Metallic Gold & Dark Metallic Emerald Styling */
+        .text-gold-gradient {
+            background: linear-gradient(135deg, #f5e6a3 0%, #dfb653 50%, #997624 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .bg-gold-gradient {
+            background: linear-gradient(135deg, #f5e6a3 0%, #dfb653 60%, #c49933 100%);
+            color: #04140e;
+        }
+
+        .gold-card-border {
+            border: 1.5px solid rgba(223, 182, 83, 0.35);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+        }
+
+        .photo-card-frame {
+            background: linear-gradient(180deg, #0d2d21 0%, #082218 100%);
+            border: 1.5px solid rgba(223, 182, 83, 0.35);
+            box-shadow: inset 0 1px 1px rgba(245, 230, 163, 0.15), 0 8px 24px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Always reserve the page scrollbar so cards sit in the same place on every page */
+        html { overflow-y: scroll; }
+
+        /* Kaaba shimmer: idle on the front page, shimmering once a lesson starts */
+        .kaaba-logo { position: relative; overflow: hidden; }
+        .learning .kaaba-logo::after {
+            content: ''; position: absolute; top: 0; left: -70%; width: 45%; height: 100%;
+            background: linear-gradient(110deg, transparent, rgba(255,255,255,.75), transparent);
+            transform: skewX(-20deg); animation: kaabaShimmer 2.6s ease-in-out infinite;
+        }
+        @keyframes kaabaShimmer { 0% { left: -70%; } 55%, 100% { left: 130%; } }
+        @media (prefers-reduced-motion: reduce) { .learning .kaaba-logo::after { animation: none; } }
+
+        .blank-target-box {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 80px;
+            height: 44px;
+            padding: 0 16px;
+            margin: 0 8px;
+            background: #061912;
+            border: 1.5px solid rgba(223, 182, 83, 0.4);
+            border-radius: 14px;
+            box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.6);
+            vertical-align: middle;
+            color: #ebd589;
+            font-weight: bold;
+        }
+
+        .choice-btn-photo {
+            background: linear-gradient(180deg, #0c2e22 0%, #071f17 100%);
+            border: 1.5px solid rgba(223, 182, 83, 0.35);
+            border-radius: 18px;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            min-height: 52px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .choice-btn-photo:hover {
+            border-color: rgba(235, 213, 137, 0.7);
+            background: linear-gradient(180deg, #103b2c 0%, #0a271d 100%);
+        }
+
+        .choice-btn-photo:active {
+            transform: scale(0.98);
+        }
+
+        .choice-correct {
+            border-color: #ebd589 !important;
+            background: linear-gradient(180deg, #164735 0%, #0f3628 100%) !important;
+            color: #ebd589 !important;
+            box-shadow: 0 0 20px rgba(235, 213, 137, 0.4);
+        }
+
+        .choice-incorrect {
+            border-color: #ef4444 !important;
+            background: linear-gradient(180deg, #4d1515 0%, #330b0b 100%) !important;
+            color: #fca5a5 !important;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #04140e;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #dfb653;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-start pb-6 px-3">
+
+    <!-- TOP NAVIGATION BAR -->
+    <header class="w-full max-w-md sm:max-w-xl bg-emeraldDeep/95 backdrop-blur-md border border-goldBase/30 sticky top-0 z-40 px-4 py-3 mt-2 rounded-2xl shadow-xl" style="display:grid;grid-template-columns:1fr auto 1fr;align-items:center">
+        <!-- Left: Kaaba & User Profile Menu -->
+        <div class="relative" style="justify-self:start">
+            <div id="kaabaLogo" class="kaaba-logo w-10 h-10 rounded-xl bg-gold-gradient flex items-center justify-center text-emeraldDark font-extrabold text-xl shadow-md cursor-pointer" style="box-shadow:0 0 0 2px rgba(223,182,83,.25),0 4px 10px rgba(0,0,0,.4)" onclick="toggleKaabaMenu(event)" title="Account & Progress">
+                <i class="fa-solid fa-kaaba"></i>
+            </div>
+
+            <!-- KAABA USER PROFILE DROPDOWN MENU -->
+            <div id="kaabaProfileMenu" class="hidden photo-card-frame rounded-2xl border gold-card-border text-left" style="position:absolute;top:52px;left:0;width:272px;padding:14px;z-index:60;box-shadow:0 18px 40px rgba(0,0,0,.85)">
+                <!-- Name & Email -->
+                <div class="flex items-center gap-2.5" style="padding-bottom:10px;border-bottom:1px solid rgba(223,182,83,.2)">
+                    <div id="menuUserAvatar" class="w-10 h-10 rounded-full bg-gold-gradient text-emeraldDark font-extrabold text-sm flex items-center justify-center" style="flex:none">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div style="min-width:0;flex:1">
+                        <div id="menuUserName" class="text-xs font-extrabold text-goldBright" style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Guest User</div>
+                        <div id="menuUserEmail" class="text-[10px] text-amber-200/70" style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Not signed in</div>
+                    </div>
+                </div>
+
+                <!-- Progress & Score -->
+                <div class="bg-emeraldDark/90 rounded-xl border border-goldBase/30" style="margin-top:10px;padding:10px">
+                    <div class="flex items-center justify-between" style="margin-bottom:6px">
+                        <span class="text-[10px] font-bold uppercase tracking-wider text-goldBase">Overall Progress</span>
+                        <span id="menuProgressText" class="text-[11px] font-extrabold text-goldBright">0 / 36 Surahs</span>
+                    </div>
+                    <div class="w-full bg-emeraldCard h-1.5 rounded-full overflow-hidden border border-goldBase/20" style="margin-bottom:8px">
+                        <div id="menuProgressBar" class="bg-gold-gradient h-full transition-all duration-300" style="width:0%"></div>
+                    </div>
+                    <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;text-align:center">
+                        <div class="bg-emeraldCard/80 rounded-lg border border-goldBase/20" style="padding:5px 4px">
+                            <span class="text-[9px] text-amber-200/60 block uppercase">Avg Score</span>
+                            <span id="menuAvgScore" class="text-xs font-extrabold text-goldBright">0%</span>
+                        </div>
+                        <div class="bg-emeraldCard/80 rounded-lg border border-goldBase/20" style="padding:5px 4px">
+                            <span class="text-[9px] text-amber-200/60 block uppercase">Total Tries</span>
+                            <span id="menuTotalTries" class="text-xs font-extrabold text-amber-200">0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation & Logout Actions -->
+                <div class="flex flex-col" style="margin-top:10px;gap:6px">
+                    <button onclick="closeKaabaMenu(); goToStartPage();" class="w-full py-2 px-3 rounded-xl bg-emeraldDark border border-goldBase/30 text-amber-200 font-bold text-xs flex items-center justify-center gap-2 hover:border-goldBright transition">
+                        <i class="fa-solid fa-house text-goldBase"></i> Home Screen
+                    </button>
+                    <button id="menuLogoutBtn" onclick="logoutUser()" class="w-full py-2 px-3 rounded-xl bg-gold-gradient text-emeraldDark font-extrabold text-xs flex items-center justify-center gap-2 shadow hover:brightness-110 transition">
+                        <i class="fa-solid fa-right-from-bracket"></i> <span id="menuLogoutLabel">Sign In / Register</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Centre: brand name -->
+        <h1 style="line-height:1;text-align:center;white-space:nowrap">
+            <span class="text-gold-gradient font-extrabold uppercase" style="display:block;font-size:17px;letter-spacing:.14em;padding-left:.14em">Flowmula</span>
+            <span class="text-gold-gradient font-bold uppercase" style="display:block;font-size:10px;letter-spacing:.42em;padding-left:.42em;margin-top:5px">Muqaddam</span>
+        </h1>
+
+        <!-- Right: language -->
+        <div style="justify-self:end">
+            <select id="langSelect" aria-label="Language" style="width:auto;font-size:16px;line-height:1;padding-left:6px;padding-right:2px" onchange="changeLanguage()" class="bg-emeraldCard text-amber-200 border border-goldBase/40 text-xs rounded-xl py-1.5 focus:outline-none focus:border-goldBright cursor-pointer">
+                <option value="en" title="English">🇬🇧</option>
+                <option value="ms" title="Bahasa Melayu">🇲🇾</option>
+                <option value="ar" title="العربية">🇸🇦</option>
+                <option value="id" title="Bahasa Indonesia">🇮🇩</option>
+                <option value="fr" title="Français">🇫🇷</option>
+            </select>
+        </div>
+    </header>
+
+    <!-- PAGE 1: START / ONBOARDING PAGE -->
+    <div id="startPage" class="w-full max-w-md sm:max-w-xl mt-3 flex flex-col" style="gap:10px">
+
+        <!-- MAIN SECTION: JOURNEY + METHODOLOGY + ACCOUNT ACCESS -->
+        <div id="authCard" class="photo-card-frame rounded-3xl border gold-card-border relative overflow-hidden" style="padding:14px 14px 12px">
+            <div id="authHead" class="text-center">
+                <h2 id="authTitle" class="text-base sm:text-xl font-extrabold text-gold-gradient leading-snug">Start Your Quranic Memory Journey</h2>
+            </div>
+
+            <div class="text-center" style="margin-top:10px">
+                <div class="inline-block px-2.5 rounded-full bg-goldBase/20 border border-goldBase/40 text-goldBright font-bold uppercase tracking-widest" style="font-size:9px;padding-top:2px;padding-bottom:2px">Core Methodology</div>
+                <h3 id="sloganText" class="text-sm sm:text-lg font-extrabold text-gold-gradient leading-snug" style="margin-top:6px">
+                    "Engrave the Light of Quran in Heart & Mind through Active Recall"
+                </h3>
+                <p id="sloganSubtext" class="text-amber-200/70" style="font-size:10px;line-height:1.35;margin-top:4px">
+                    Read, recognize, lock the script, and prove your retention verse by verse with interactive practice.
+                </p>
+            </div>
+
+            <div id="authBox" class="bg-emeraldDark/90 rounded-2xl border border-goldBase/30 text-center" style="margin-top:10px;padding:8px 10px">
+                <div class="text-goldBright font-bold uppercase tracking-widest" style="font-size:9px">Account Access</div>
+                <p id="authSubtitle" class="text-amber-200/70" style="font-size:10px;line-height:1.3;margin:2px 0 6px">Sign in or register to save your progress.</p>
+                <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px">
+                    <button onclick="continueGuest()" class="py-2 px-1 bg-emeraldCard border border-goldBase/30 text-amber-200 font-medium rounded-xl text-xs flex items-center justify-center gap-1.5 hover:border-goldBright transition">
+                        <i class="fa-solid fa-user text-goldBase"></i> Guest
+                    </button>
+                    <button id="btnGmailLogin" onclick="loginGmail()" class="py-2 px-1 bg-white text-gray-900 font-semibold rounded-xl text-xs flex items-center justify-center gap-1.5 shadow hover:bg-gray-100 transition">
+                        <i class="fa-brands fa-google text-red-500"></i> Gmail
+                    </button>
+                    <button id="btnRegisterOpen" onclick="openRegisterModal()" class="py-2 px-1 bg-emeraldCard border border-goldBase/30 text-amber-200 font-medium rounded-xl text-xs flex items-center justify-center gap-1.5 hover:border-goldBright transition">
+                        <i class="fa-solid fa-user-plus text-goldBase"></i> Register
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- DONATION & SUPPORT: always side by side -->
+        <div class="grid grid-cols-2" style="gap:10px">
+            <div class="photo-card-frame rounded-2xl text-center flex flex-col items-center justify-between" style="padding:10px 8px">
+                <div class="inline-block px-2.5 rounded-full bg-goldBase/20 border border-goldBase/40 text-goldBright font-bold uppercase tracking-widest" style="font-size:9px;padding-top:2px;padding-bottom:2px;margin-bottom:4px">Infaq Support</div>
+                <p class="text-amber-200/70" style="font-size:10px;line-height:1.3;margin-bottom:6px">Scan here to help our pilot app take flight into a global library of learning apps</p>
+                <div class="bg-emeraldDark border border-goldBase/40 rounded-lg" style="width:86px;height:86px;padding:4px;margin-bottom:6px">
+                    <div id="donateQR" class="rounded" style="width:76px;height:76px;overflow:hidden" role="img" aria-label="QR Donation"></div>
+                </div>
+                <button onclick="copyDonationAddress()" style="white-space:nowrap;padding:5px 10px" class="bg-gold-gradient text-emeraldDark rounded-lg font-bold text-[11px]">Copy Infaq Address</button>
+            </div>
+
+            <div class="photo-card-frame rounded-2xl text-center flex flex-col items-center justify-between" style="padding:10px 8px">
+                <div class="inline-block px-2.5 rounded-full bg-goldBase/20 border border-goldBase/40 text-goldBright font-bold uppercase tracking-widest" style="font-size:9px;padding-top:2px;padding-bottom:2px;margin-bottom:4px">Buy Us A Coffee</div>
+                <p class="text-amber-200/70" style="font-size:10px;line-height:1.3;margin-bottom:6px">Buy us coffee to help us pilot into a global library of learning apps</p>
+                <div class="bg-emeraldDark border border-goldBase/40 rounded-lg" style="width:86px;height:86px;padding:4px;margin-bottom:6px;display:flex;align-items:center;justify-content:center;text-align:center">
+                    <svg viewBox="0 0 33 30" width="76" height="76" preserveAspectRatio="none" role="img" aria-label="Every Contribution Helps" shape-rendering="crispEdges" style="display:block"><defs><linearGradient id="khatGold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f5e6a3"/><stop offset=".5" stop-color="#dfb653"/><stop offset="1" stop-color="#b8892b"/></linearGradient></defs><g fill="url(#khatGold)"><g transform="translate(2,2)"><rect x="0.0" y="0" width="4.833" height="1"/><rect x="0.0" y="1" width="1.208" height="1"/><rect x="0.0" y="2" width="3.625" height="1"/><rect x="0.0" y="3" width="1.208" height="1"/><rect x="0.0" y="4" width="4.833" height="1"/><rect x="6.042" y="0" width="1.208" height="1"/><rect x="9.667" y="0" width="1.208" height="1"/><rect x="6.042" y="1" width="1.208" height="1"/><rect x="9.667" y="1" width="1.208" height="1"/><rect x="6.042" y="2" width="1.208" height="1"/><rect x="9.667" y="2" width="1.208" height="1"/><rect x="7.25" y="3" width="2.417" height="1"/><rect x="7.25" y="4" width="2.417" height="1"/><rect x="12.083" y="0" width="4.833" height="1"/><rect x="12.083" y="1" width="1.208" height="1"/><rect x="12.083" y="2" width="3.625" height="1"/><rect x="12.083" y="3" width="1.208" height="1"/><rect x="12.083" y="4" width="4.833" height="1"/><rect x="18.125" y="0" width="3.625" height="1"/><rect x="18.125" y="1" width="1.208" height="1"/><rect x="21.75" y="1" width="1.208" height="1"/><rect x="18.125" y="2" width="3.625" height="1"/><rect x="18.125" y="3" width="1.208" height="1"/><rect x="20.542" y="3" width="1.208" height="1"/><rect x="18.125" y="4" width="1.208" height="1"/><rect x="21.75" y="4" width="1.208" height="1"/><rect x="24.167" y="0" width="1.208" height="1"/><rect x="27.792" y="0" width="1.208" height="1"/><rect x="24.167" y="1" width="1.208" height="1"/><rect x="27.792" y="1" width="1.208" height="1"/><rect x="25.375" y="2" width="2.417" height="1"/><rect x="25.375" y="3" width="2.417" height="1"/><rect x="25.375" y="4" width="2.417" height="1"/><rect x="0.0" y="7" width="4.0" height="1"/><rect x="0.0" y="8" width="1.0" height="1"/><rect x="0.0" y="9" width="1.0" height="1"/><rect x="0.0" y="10" width="1.0" height="1"/><rect x="0.0" y="11" width="4.0" height="1"/><rect x="5.0" y="7" width="4.0" height="1"/><rect x="5.0" y="8" width="1.0" height="1"/><rect x="8.0" y="8" width="1.0" height="1"/><rect x="5.0" y="9" width="1.0" height="1"/><rect x="8.0" y="9" width="1.0" height="1"/><rect x="5.0" y="10" width="1.0" height="1"/><rect x="8.0" y="10" width="1.0" height="1"/><rect x="5.0" y="11" width="4.0" height="1"/><rect x="10.0" y="7" width="1.0" height="1"/><rect x="13.0" y="7" width="1.0" height="1"/><rect x="10.0" y="8" width="2.0" height="1"/><rect x="13.0" y="8" width="1.0" height="1"/><rect x="10.0" y="9" width="1.0" height="1"/><rect x="12.0" y="9" width="2.0" height="1"/><rect x="10.0" y="10" width="1.0" height="1"/><rect x="13.0" y="10" width="1.0" height="1"/><rect x="10.0" y="11" width="1.0" height="1"/><rect x="13.0" y="11" width="1.0" height="1"/><rect x="15.0" y="7" width="4.0" height="1"/><rect x="16.0" y="8" width="2.0" height="1"/><rect x="16.0" y="9" width="2.0" height="1"/><rect x="16.0" y="10" width="2.0" height="1"/><rect x="16.0" y="11" width="2.0" height="1"/><rect x="20.0" y="7" width="3.0" height="1"/><rect x="20.0" y="8" width="1.0" height="1"/><rect x="23.0" y="8" width="1.0" height="1"/><rect x="20.0" y="9" width="3.0" height="1"/><rect x="20.0" y="10" width="1.0" height="1"/><rect x="22.0" y="10" width="1.0" height="1"/><rect x="20.0" y="11" width="1.0" height="1"/><rect x="23.0" y="11" width="1.0" height="1"/><rect x="25.0" y="7" width="4.0" height="1"/><rect x="26.0" y="8" width="2.0" height="1"/><rect x="26.0" y="9" width="2.0" height="1"/><rect x="26.0" y="10" width="2.0" height="1"/><rect x="25.0" y="11" width="4.0" height="1"/><rect x="0.0" y="14" width="3.0" height="1"/><rect x="0.0" y="15" width="1.0" height="1"/><rect x="3.0" y="15" width="1.0" height="1"/><rect x="0.0" y="16" width="3.0" height="1"/><rect x="0.0" y="17" width="1.0" height="1"/><rect x="3.0" y="17" width="1.0" height="1"/><rect x="0.0" y="18" width="3.0" height="1"/><rect x="5.0" y="14" width="1.0" height="1"/><rect x="8.0" y="14" width="1.0" height="1"/><rect x="5.0" y="15" width="1.0" height="1"/><rect x="8.0" y="15" width="1.0" height="1"/><rect x="5.0" y="16" width="1.0" height="1"/><rect x="8.0" y="16" width="1.0" height="1"/><rect x="5.0" y="17" width="1.0" height="1"/><rect x="8.0" y="17" width="1.0" height="1"/><rect x="5.0" y="18" width="4.0" height="1"/><rect x="10.0" y="14" width="4.0" height="1"/><rect x="11.0" y="15" width="2.0" height="1"/><rect x="11.0" y="16" width="2.0" height="1"/><rect x="11.0" y="17" width="2.0" height="1"/><rect x="11.0" y="18" width="2.0" height="1"/><rect x="15.0" y="14" width="4.0" height="1"/><rect x="16.0" y="15" width="2.0" height="1"/><rect x="16.0" y="16" width="2.0" height="1"/><rect x="16.0" y="17" width="2.0" height="1"/><rect x="15.0" y="18" width="4.0" height="1"/><rect x="20.0" y="14" width="4.0" height="1"/><rect x="20.0" y="15" width="1.0" height="1"/><rect x="23.0" y="15" width="1.0" height="1"/><rect x="20.0" y="16" width="1.0" height="1"/><rect x="23.0" y="16" width="1.0" height="1"/><rect x="20.0" y="17" width="1.0" height="1"/><rect x="23.0" y="17" width="1.0" height="1"/><rect x="20.0" y="18" width="4.0" height="1"/><rect x="25.0" y="14" width="1.0" height="1"/><rect x="28.0" y="14" width="1.0" height="1"/><rect x="25.0" y="15" width="2.0" height="1"/><rect x="28.0" y="15" width="1.0" height="1"/><rect x="25.0" y="16" width="1.0" height="1"/><rect x="27.0" y="16" width="2.0" height="1"/><rect x="25.0" y="17" width="1.0" height="1"/><rect x="28.0" y="17" width="1.0" height="1"/><rect x="25.0" y="18" width="1.0" height="1"/><rect x="28.0" y="18" width="1.0" height="1"/><rect x="0.0" y="21" width="1.208" height="1"/><rect x="3.625" y="21" width="1.208" height="1"/><rect x="0.0" y="22" width="1.208" height="1"/><rect x="3.625" y="22" width="1.208" height="1"/><rect x="0.0" y="23" width="4.833" height="1"/><rect x="0.0" y="24" width="1.208" height="1"/><rect x="3.625" y="24" width="1.208" height="1"/><rect x="0.0" y="25" width="1.208" height="1"/><rect x="3.625" y="25" width="1.208" height="1"/><rect x="6.042" y="21" width="4.833" height="1"/><rect x="6.042" y="22" width="1.208" height="1"/><rect x="6.042" y="23" width="3.625" height="1"/><rect x="6.042" y="24" width="1.208" height="1"/><rect x="6.042" y="25" width="4.833" height="1"/><rect x="12.083" y="21" width="1.208" height="1"/><rect x="12.083" y="22" width="1.208" height="1"/><rect x="12.083" y="23" width="1.208" height="1"/><rect x="12.083" y="24" width="1.208" height="1"/><rect x="12.083" y="25" width="4.833" height="1"/><rect x="18.125" y="21" width="3.625" height="1"/><rect x="18.125" y="22" width="1.208" height="1"/><rect x="21.75" y="22" width="1.208" height="1"/><rect x="18.125" y="23" width="3.625" height="1"/><rect x="18.125" y="24" width="1.208" height="1"/><rect x="18.125" y="25" width="1.208" height="1"/><rect x="24.167" y="21" width="4.833" height="1"/><rect x="24.167" y="22" width="1.208" height="1"/><rect x="24.167" y="23" width="4.833" height="1"/><rect x="27.792" y="24" width="1.208" height="1"/><rect x="24.167" y="25" width="4.833" height="1"/><rect x="5.5" y="5.75" width="0.5" height="0.5"/><rect x="9.0" y="5.75" width="0.5" height="0.5"/><rect x="19.0" y="5.75" width="0.5" height="0.5"/><rect x="0.0" y="12.75" width="0.5" height="0.5"/><rect x="3.5" y="12.75" width="0.5" height="0.5"/><rect x="8.0" y="12.75" width="0.5" height="0.5"/><rect x="8.5" y="12.75" width="0.5" height="0.5"/><rect x="11.5" y="12.75" width="0.5" height="0.5"/><rect x="13.0" y="12.75" width="0.5" height="0.5"/><rect x="13.5" y="12.75" width="0.5" height="0.5"/><rect x="14.5" y="12.75" width="0.5" height="0.5"/><rect x="15.0" y="12.75" width="0.5" height="0.5"/><rect x="15.5" y="12.75" width="0.5" height="0.5"/><rect x="19.0" y="12.75" width="0.5" height="0.5"/><rect x="21.0" y="12.75" width="0.5" height="0.5"/><rect x="22.5" y="12.75" width="0.5" height="0.5"/><rect x="23.5" y="12.75" width="0.5" height="0.5"/><rect x="28.5" y="12.75" width="0.5" height="0.5"/><rect x="3.5" y="19.75" width="0.5" height="0.5"/><rect x="4.0" y="19.75" width="0.5" height="0.5"/><rect x="5.5" y="19.75" width="0.5" height="0.5"/><rect x="16.0" y="19.75" width="0.5" height="0.5"/><rect x="19.0" y="19.75" width="0.5" height="0.5"/><rect x="22.5" y="19.75" width="0.5" height="0.5"/><rect x="26.5" y="19.75" width="0.5" height="0.5"/></g><rect x="6" y="0" width="1" height="1"/><rect x="11" y="0" width="1" height="1"/><rect x="13" y="0" width="1" height="1"/><rect x="16" y="0" width="1" height="1"/><rect x="17" y="0" width="1" height="1"/><rect x="18" y="0" width="1" height="1"/><rect x="21" y="0" width="1" height="1"/><rect x="23" y="0" width="1" height="1"/><rect x="25" y="0" width="1" height="1"/><rect x="26" y="0" width="1" height="1"/><rect x="28" y="0" width="1" height="1"/><rect x="29" y="0" width="1" height="1"/><rect x="32" y="0" width="1" height="1"/><rect x="32" y="2" width="1" height="1"/><rect x="0" y="5" width="1" height="1"/><rect x="32" y="5" width="1" height="1"/><rect x="0" y="6" width="1" height="1"/><rect x="32" y="6" width="1" height="1"/><rect x="0" y="7" width="1" height="1"/><rect x="32" y="7" width="1" height="1"/><rect x="32" y="8" width="1" height="1"/><rect x="32" y="9" width="1" height="1"/><rect x="0" y="10" width="1" height="1"/><rect x="32" y="11" width="1" height="1"/><rect x="0" y="13" width="1" height="1"/><rect x="0" y="14" width="1" height="1"/><rect x="32" y="15" width="1" height="1"/><rect x="32" y="16" width="1" height="1"/><rect x="32" y="17" width="1" height="1"/><rect x="0" y="18" width="1" height="1"/><rect x="32" y="18" width="1" height="1"/><rect x="32" y="19" width="1" height="1"/><rect x="32" y="21" width="1" height="1"/><rect x="0" y="22" width="1" height="1"/><rect x="32" y="23" width="1" height="1"/><rect x="32" y="25" width="1" height="1"/><rect x="32" y="26" width="1" height="1"/><rect x="0" y="27" width="1" height="1"/><rect x="32" y="28" width="1" height="1"/><rect x="2" y="29" width="1" height="1"/><rect x="3" y="29" width="1" height="1"/><rect x="4" y="29" width="1" height="1"/><rect x="5" y="29" width="1" height="1"/><rect x="6" y="29" width="1" height="1"/><rect x="9" y="29" width="1" height="1"/><rect x="10" y="29" width="1" height="1"/><rect x="14" y="29" width="1" height="1"/><rect x="19" y="29" width="1" height="1"/><rect x="21" y="29" width="1" height="1"/><rect x="24" y="29" width="1" height="1"/><rect x="29" y="29" width="1" height="1"/><rect x="31" y="29" width="1" height="1"/></g></svg>
+                </div>
+                <a href="https://www.buymeacoffee.com" target="_blank" style="white-space:nowrap;padding:5px 10px" class="bg-amber-400 text-slate-950 font-extrabold rounded-lg text-[11px] flex items-center justify-center gap-1.5 hover:bg-amber-300 transition">
+                    <i class="fa-solid fa-coffee"></i> Buy Me a Coffee
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 3: MAIN SYSTEM COMPONENT MATCHING PHOTO UI LAYOUT -->
+    <div id="mainSystemPage" class="hidden w-full max-w-md sm:max-w-xl mt-3 flex flex-col space-y-3">
+
+        <!-- HEADER CARD WITH SEGMENTED SWITCHER -->
+        <div id="modeCard" class="photo-card-frame rounded-2xl p-3 relative overflow-hidden">
+            <div class="flex items-center justify-between">
+                <div>
+                    <h2 id="currentSurahTitle" class="text-base font-extrabold text-gold-gradient">Al-Fatihah</h2>
+                    <p id="currentSurahSub" class="text-[10px] text-amber-200/70">7 Ayahs · The Opening</p>
+                </div>
+
+                <!-- MODE SWITCHER PILL BUTTONS (Read / Recall) -->
+                <div class="bg-emeraldDark/90 p-1 rounded-2xl border border-goldBase/30 flex items-center gap-1">
+                    <button id="btnTabRead" onclick="switchAppMode('read')" class="px-4 py-2 rounded-xl text-xs font-extrabold transition bg-gold-gradient text-emeraldDark shadow">
+                        Read
+                    </button>
+                    <button id="btnTabRecall" onclick="switchAppMode('recall')" class="px-4 py-2 rounded-xl text-xs font-semibold transition text-amber-200 hover:text-goldBright">
+                        Recall
+                    </button>
+                </div>
+            </div>
+
+            <!-- Thin Gold Progress Bar -->
+            <div class="w-full bg-emeraldDark/80 h-1.5 rounded-full mt-2 border border-goldBase/20 overflow-hidden">
+                <div id="surahProgressBar" class="bg-gold-gradient h-full w-1/7 transition-all duration-300"></div>
+            </div>
+        </div>
+
+        <!-- MAIN QUESTION INTERACTIVE CARD ("FILL THE BLANK") -->
+        <div id="interactiveQuestionCard" class="photo-card-frame rounded-3xl p-4 flex flex-col justify-between">
+            <div id="cardSectionLabel" class="text-[11px] font-bold tracking-widest text-goldBase/80 text-center uppercase">
+                READ & REFLECT
+            </div>
+
+            <!-- Quranic Verse Display Container -->
+            <div id="arabicDisplayWrapper" class="my-auto py-3">
+                <div id="arabicVerseDisplay" dir="rtl" lang="ar" class="font-arabic text-2xl sm:text-4xl text-amber-100 text-center leading-loose">
+                    <!-- Verse dynamically rendered -->
+                </div>
+            </div>
+
+            <!-- RECALL MODE: FILL IN THE BLANKS (2x2 CHOICE GRID) -->
+            <div id="recognizeGridContainer" class="hidden grid grid-cols-2 gap-2">
+                <!-- 4 Interactive Choice Buttons dynamically created -->
+            </div>
+
+            <!-- READ MODE FULL SURAH VIEW CONTAINER -->
+            <div id="readModeContainer" class="overflow-y-auto space-y-3 pr-1 text-left" style="padding-top:3px;padding-bottom:3px;max-height:calc(100vh - 330px);max-height:calc(100dvh - 330px);min-height:120px">
+                <!-- Full verses list -->
+            </div>
+        </div>
+
+        <!-- BOTTOM ACTION & NAVIGATION BAR -->
+        <div id="bottomBarCard" class="photo-card-frame rounded-2xl p-3 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 rounded-full bg-emeraldDark border border-goldBase/30 flex items-center justify-center text-goldBright text-xs">
+                    <i class="fa-solid fa-book-open" id="bottomBarIcon"></i>
+                </div>
+                <div>
+                    <div id="bottomStatusTitle" class="text-xs font-bold text-amber-200">Ayah 1 of 7</div>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-2">
+                <button id="btnPrevAyah" onclick="navigateAyah(-1)" class="px-4 py-2 rounded-xl bg-emeraldDark border border-goldBase/30 text-amber-200 font-bold text-xs hover:border-goldBright disabled:opacity-40 transition">
+                    Prev
+                </button>
+                <button id="btnNextAyah" onclick="navigateAyah(1)" class="px-5 py-2 rounded-xl bg-gold-gradient text-emeraldDark font-extrabold text-xs shadow hover:brightness-110 disabled:opacity-40 transition">
+                    Next
+                </button>
+            </div>
+        </div>
+
+        <!-- ROUTINES STATS FOOTER -->
+        <div class="bg-emeraldDark/80 p-3 rounded-2xl border border-goldBase/20 flex items-center justify-around text-center text-xs">
+            <div>
+                <span class="text-[10px] text-amber-200/60 block uppercase">Score</span>
+                <span id="statScore" class="font-extrabold text-goldBright">0%</span>
+            </div>
+            <div class="border-x border-goldBase/20 px-4">
+                <span class="text-[10px] text-amber-200/60 block uppercase">Tries</span>
+                <span id="statTries" class="font-extrabold text-amber-200">0</span>
+            </div>
+            <div>
+                <span class="text-[10px] text-amber-200/60 block uppercase">Duration</span>
+                <span id="statTime" class="font-extrabold text-amber-100 font-mono">00:00</span>
+            </div>
+        </div>
+
+        <!-- SELECTION NUMBERED GRID BOX (SURAH SELECTION) -->
+        <div class="photo-card-frame rounded-3xl p-5">
+            <div class="flex items-center justify-between mb-3">
+                <h3 class="font-bold text-gold-gradient text-xs uppercase tracking-wider">
+                    <i class="fa-solid fa-table-cells-large"></i> Select Surah
+                </h3>
+                <span class="text-[11px] text-goldBase font-bold">36 Surahs</span>
+            </div>
+            <div id="surahNumberedGrid" class="grid grid-cols-6 sm:grid-cols-9 gap-2.5 max-h-[180px] overflow-y-auto p-1">
+                <!-- Dynamic Surah Numbered Buttons -->
+            </div>
+        </div>
+    </div>
+
+    <!-- LIVE REGISTRATION & EMAIL SIGN-IN MODAL -->
+    <div id="registerModal" class="hidden" style="position:fixed;top:0;right:0;bottom:0;left:0;z-index:70;display:none;align-items:center;justify-content:center;padding:16px;background:rgba(2,6,23,.82)">
+        <div class="photo-card-frame rounded-3xl border gold-card-border relative" style="width:100%;max-width:350px;padding:20px">
+            <button onclick="closeRegisterModal()" aria-label="Close" class="text-amber-200/70 hover:text-goldBright" style="position:absolute;top:14px;right:16px;font-size:16px">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="text-center" style="margin-bottom:14px">
+                <div class="inline-block px-2.5 rounded-full bg-goldBase/20 border border-goldBase/40 text-goldBright font-bold uppercase tracking-widest" style="font-size:9px;padding-top:2px;padding-bottom:2px;margin-bottom:6px">Live Account</div>
+                <h3 id="regModalTitle" class="text-lg font-extrabold text-gold-gradient">Create Your Account</h3>
+                <p id="regModalSubtitle" class="text-[11px] text-amber-200/70" style="margin-top:2px">Save your Quran memorization progress across sessions.</p>
+            </div>
+
+            <form id="authAccountForm" onsubmit="submitAccountForm(event)" class="flex flex-col" style="gap:10px">
+                <div id="regNameGroup">
+                    <label for="regNameInput" class="block text-[10px] font-bold uppercase tracking-wider text-goldBase" style="margin-bottom:4px">Full Name</label>
+                    <input id="regNameInput" type="text" placeholder="e.g. Ahmad Zulkifli" class="w-full bg-emeraldDark/90 border border-goldBase/40 rounded-xl px-3 py-2 text-xs text-amber-100 focus:outline-none focus:border-goldBright">
+                </div>
+                <div>
+                    <label for="regEmailInput" class="block text-[10px] font-bold uppercase tracking-wider text-goldBase" style="margin-bottom:4px">Email / Gmail Address</label>
+                    <input id="regEmailInput" type="email" required placeholder="you@gmail.com" class="w-full bg-emeraldDark/90 border border-goldBase/40 rounded-xl px-3 py-2 text-xs text-amber-100 focus:outline-none focus:border-goldBright">
+                </div>
+                <div>
+                    <label for="regPasswordInput" class="block text-[10px] font-bold uppercase tracking-wider text-goldBase" style="margin-bottom:4px">Password</label>
+                    <input id="regPasswordInput" type="password" required minlength="6" placeholder="Minimum 6 characters" class="w-full bg-emeraldDark/90 border border-goldBase/40 rounded-xl px-3 py-2 text-xs text-amber-100 focus:outline-none focus:border-goldBright">
+                </div>
+
+                <div id="regErrorMsg" class="hidden text-[11px] text-red-400 text-center"></div>
+
+                <button id="regSubmitBtn" type="submit" class="w-full py-2.5 bg-gold-gradient text-emeraldDark font-extrabold rounded-xl text-xs shadow-lg hover:brightness-110 transition" style="margin-top:4px">
+                    Create Account & Start
+                </button>
+            </form>
+
+            <div class="text-center" style="margin-top:12px;padding-top:10px;border-top:1px solid rgba(223,182,83,.2)">
+                <button type="button" id="toggleAuthModeBtn" onclick="toggleRegisterAuthMode()" class="text-[11px] text-goldBright font-semibold hover:underline">
+                    Already have an account? Sign In
+                </button>
+                <div style="margin-top:6px">
+                    <a href="https://accounts.google.com/signup?service=mail" target="_blank" rel="noopener noreferrer" class="text-[10px] text-amber-200/70 hover:text-goldBright">
+                        Need a new Gmail address? Create on Google <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:9px"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPT LOGIC & ENGINE -->
+    <script>
+        // 36 Surahs Data: Al-Fatihah (1) + Surah 114 (An-Naas) down to Surah 80 ('Abasa)
+        const legacyData = [
+            { id: 1, name: "Al-Fatihah", english: "The Opening", ayahs: [
+                { num: 1, full: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ", target: "ٱلرَّحْمَٰنِ", distractors: ["ٱلْمَشْرِقِ", "ٱلنَّارِ", "ٱلْخَٰسِرُونَ"] },
+                { num: 2, full: "ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ", target: "ٱلْعَٰلَمِينَ", distractors: ["ٱلْمُسْلِمِينَ", "ٱلْمُؤْمِنِينَ", "ٱلْمُتَّقِينَ"] },
+                { num: 3, full: "ٱلرَّحْمَٰنِ ٱلرَّحِيمِ", target: "ٱلرَّحِيمِ", distractors: ["ٱلْعَلِيمِ", "ٱلْحَكِيمِ", "ٱلْعَظِيمِ"] },
+                { num: 4, full: "مَٰلِكِ يَوْمِ ٱلدِّينِ", target: "يَوْمِ", distractors: ["نُورِ", "شَهْرِ", "لَيْلِ"] },
+                { num: 5, full: "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ", target: "نَسْتَعِينُ", distractors: ["نَشْكُرُ", "نَسْجُدُ", "نَغْفِرُ"] },
+                { num: 6, full: "ٱهْدِنَا ٱلصِّرَٰطَ ٱلْمُسْتَقِيمَ", target: "ٱلْمُسْتَقِيمَ", distractors: ["ٱلْعَظِيمَ", "ٱلْكَرِيمَ", "ٱلْحَكِيمَ"] },
+                { num: 7, full: "صِرَٰطَ ٱلَّذِينَ أَنْعَمْتَ عَلَيْهِمْ", target: "أَنْعَمْتَ", distractors: ["غَضِبْتَ", "رَحِمْتَ", "خَلَقْتَ"] }
+            ]},
+            { id: 114, name: "An-Naas", english: "Mankind", ayahs: [
+                { num: 1, full: "قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ", target: "ٱلنَّاسِ", distractors: ["ٱلْفَلَقِ", "ٱلْمَلِكِ", "ٱلْجِنَّةِ"] },
+                { num: 2, full: "مَلِكِ ٱلنَّاسِ", target: "مَلِكِ", distractors: ["رَبِّ", "إِلَٰهِ", "عَبْدِ"] },
+                { num: 3, full: "إِلَٰهِ ٱلنَّاسِ", target: "إِلَٰهِ", distractors: ["نُورِ", "مَلِكِ", "رَبِّ"] },
+                { num: 4, full: "مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ", target: "ٱلْوَسْوَاسِ", distractors: ["ٱلشَّيْطَانِ", "ٱلْحَاسِدِ", "ٱلشَّرِّ"] },
+                { num: 5, full: "ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ", target: "صُدُورِ", distractors: ["قُلُوبِ", "عُيُونِ", "أَفْوَٰهِ"] },
+                { num: 6, full: "مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ", target: "ٱلْجِنَّةِ", distractors: ["ٱلْمَلَٰٓئِكَةِ", "ٱلشَّيَاطِينِ", "ٱلْإِنسِ"] }
+            ]},
+            { id: 113, name: "Al-Falaq", english: "The Daybreak", ayahs: [
+                { num: 1, full: "قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ", target: "ٱلْفَلَقِ", distractors: ["ٱلنَّاسِ", "ٱلصُّبْحِ", "ٱلْفَجْرِ"] },
+                { num: 2, full: "مِن شَرِّ مَا خَلَقَ", target: "خَلَقَ", distractors: ["جَعَلَ", "عَمِلَ", "كَتَبَ"] },
+                { num: 3, full: "وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ", target: "وَقَبَ", distractors: ["ظَلَمَ", "حَسَدَ", "طَلَعَ"] },
+                { num: 4, full: "وَمِن شَرِّ ٱلنَّفَّٰثَٰتِ فِى ٱلْعُقَدِ", target: "ٱلْعُقَدِ", distractors: ["ٱلصُّدُورِ", "ٱلْأَرْضِ", "ٱلشَّرِّ"] },
+                { num: 5, full: "وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ", target: "حَسَدَ", distractors: ["نَظَرَ", "غَضِبَ", "خَلَقَ"] }
+            ]},
+            { id: 112, name: "Al-Ikhlas", english: "Sincerity", ayahs: [
+                { num: 1, full: "قُلْ هُوَ ٱللَّهُ أَحَدٌ", target: "أَحَدٌ", distractors: ["صَمَدٌ", "عَظِيمٌ", "عَلِيمٌ"] },
+                { num: 2, full: "ٱللَّهُ ٱلصَّمَدُ", target: "ٱلصَّمَدُ", distractors: ["ٱلْأَحَدُ", "ٱلْقَدِيرُ", "ٱلْحَكِيمُ"] },
+                { num: 3, full: "لَمْ يَلِدْ وَلَمْ يُولَدْ", target: "يَلِدْ", distractors: ["يَمُتْ", "يَعْلَمْ", "يَكُن"] },
+                { num: 4, full: "وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌ", target: "كُفُوًا", distractors: ["شَرِيكًا", "مِثْلًا", "شَبِيهًا"] }
+            ]},
+            { id: 111, name: "Al-Masad", english: "The Palm Fiber", ayahs: [
+                { num: 1, full: "تَبَّتْ يَدَا أَبِى لَهَبٍ وَتَبَّ", target: "لَهَبٍ", distractors: ["جَهَنَّمَ", "حَطَبٍ", "مَسَدٍ"] },
+                { num: 2, full: "مَا أَغْنَىٰ عَنْهُ مَالُهُۥ وَمَا كَسَبَ", target: "كَسَبَ", distractors: ["جَمَعَ", "عَمِلَ", "أَكَلَ"] }
+            ]},
+            { id: 110, name: "An-Nasr", english: "The Divine Support", ayahs: [
+                { num: 1, full: "إِذَا جَاءَ نَصْرُ ٱللَّهِ وَٱلْفَتْحُ", target: "وَٱلْفَتْحُ", distractors: ["وَٱلْفَجْرُ", "وَٱلْخَيْرُ", "وَٱلْحَقُّ"] },
+                { num: 2, full: "وَرَأَيْتَ ٱلنَّاسَ يَدْخُلُونَ فِى دِينِ ٱللَّهِ أَفْوَاجًا", target: "أَفْوَاجًا", distractors: ["جَمِيعًا", "كِثَارًا", "سِرَاعًا"] }
+            ]},
+            { id: 109, name: "Al-Kafirun", english: "The Disbelievers", ayahs: [
+                { num: 1, full: "قُلْ يَٰٓأَيُّهَا ٱلْكَٰفِرُونَ", target: "ٱلْكَٰفِرُونَ", distractors: ["ٱلْمُسْلِمُونَ", "ٱلْمُؤْمِنُونَ", "ٱلْجَٰهِلُونَ"] },
+                { num: 2, full: "لَا أَعْبُدُ مَا تَعْبُدُونَ", target: "تَعْبُدُونَ", distractors: ["تَعْلَمُونَ", "تَفْعَلُونَ", "تَسْجُدُونَ"] }
+            ]},
+            { id: 108, name: "Al-Kawthar", english: "Abundance", ayahs: [
+                { num: 1, full: "إِنَّا أَعْطَيْنَٰكَ ٱلْكَوْثَرَ", target: "ٱلْكَوْثَرَ", distractors: ["ٱلْخَيْرَ", "ٱلْنَّعِيمَ", "ٱلْحَوْضَ"] }
+            ]},
+            { id: 107, name: "Al-Ma'un", english: "Small Kindnesses", ayahs: [
+                { num: 1, full: "أَرَءَيْتَ ٱلَّذِى يُكَذِّبُ بِٱلدِّينِ", target: "يُكَذِّبُ", distractors: ["يُؤْمِنُ", "يَعْمَلُ", "يَتْرُكُ"] }
+            ]},
+            { id: 106, name: "Quraysh", english: "Quraysh", ayahs: [
+                { num: 1, full: "لِإِيلَٰفِ قُرَيْشٍ", target: "قُرَيْشٍ", distractors: ["الْعَرَبِ", "مَكَّةَ", "ٱلْحَرَمِ"] }
+            ]},
+            { id: 105, name: "Al-Fil", english: "The Elephant", ayahs: [
+                { num: 1, full: "أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِأَصْحَٰبِ ٱلْفِيلِ", target: "ٱلْفِيلِ", distractors: ["ٱلْخَيْلِ", "ٱلْإِبِلِ", "ٱلْجَمَلِ"] }
+            ]},
+            { id: 104, name: "Al-Humazah", english: "The Slanderer", ayahs: [
+                { num: 1, full: "وَيْلٌ لِّكُلِّ هُمَزَةٍ لُّمَزَةٍ", target: "لُّمَزَةٍ", distractors: ["كَاذِبٍ", "غَافِلٍ", "مُنَافِقٍ"] }
+            ]},
+            { id: 103, name: "Al-'Asr", english: "The Declining Day", ayahs: [
+                { num: 1, full: "وَٱلْعَصْرِ", target: "وَٱلْعَصْرِ", distractors: ["وَٱلْفَجْرِ", "وَٱلشَّمْسِ", "وَٱللَّيْلِ"] },
+                { num: 2, full: "إِنَّ ٱلْإِنسَٰنَ لَفِى خُسْرٍ", target: "خُسْرٍ", distractors: ["نَعِيمٍ", "عَذَابٍ", "خَوْفٍ"] }
+            ]},
+            { id: 102, name: "At-Takathur", english: "Competition in Increase", ayahs: [
+                { num: 1, full: "أَلْهَىٰكُمُ ٱلتَّكَاثُرُ", target: "ٱلتَّكَاثُرُ", distractors: ["ٱلتَّفَاخُرُ", "ٱلْمَالُ", "ٱلدُّنْيَا"] }
+            ]},
+            { id: 101, name: "Al-Qari'ah", english: "The Calamity", ayahs: [
+                { num: 1, full: "ٱلْقَارِعَةُ", target: "ٱلْقَارِعَةُ", distractors: ["ٱلْحَاقَّةُ", "ٱلْوَاقِعَةُ", "ٱلطَّامَّةُ"] }
+            ]},
+            { id: 100, name: "Al-'Adiyat", english: "The Courser", ayahs: [
+                { num: 1, full: "وَٱلْعَٰدِيَٰتِ ضَبْحًا", target: "ضَبْحًا", distractors: ["قَدْحًا", "صُبْحًا", "مَوْجًا"] }
+            ]},
+            { id: 99, name: "Az-Zalzalah", english: "The Earthquake", ayahs: [
+                { num: 1, full: "إِذَا زُلْزِلَتِ ٱلْأَرْضُ زِلْزَالَهَا", target: "زِلْزَالَهَا", distractors: ["أَثْقَالَهَا", "أَخْبَارَهَا", "أَمْرَهَا"] }
+            ]},
+            { id: 98, name: "Al-Bayyinah", english: "The Clear Proof", ayahs: [
+                { num: 1, full: "لَمْ يَكُنِ ٱلَّذِينَ كَفَرُوا مِنْ أَهْلِ ٱلْكِتَٰبِ وَٱلْمُشْرِكِينَ مُنفَكِّينَ حَتَّىٰ تَأْتِيَهُمُ ٱلْبَيِّنَةُ", target: "ٱلْبَيِّنَةُ", distractors: ["ٱلْحِكْمَةُ", "ٱلْبُشْرَىٰ", "ٱلرَّحْمَةُ"] }
+            ]},
+            { id: 97, name: "Al-Qadr", english: "The Decree", ayahs: [
+                { num: 1, full: "إِنَّآ أَنزَلْنَٰهُ فِى لَيْلَةِ ٱلْقَدْرِ", target: "ٱلْقَدْرِ", distractors: ["ٱلْمَبَارَكَةِ", "ٱلْجُمُعَةِ", "ٱلْفَجْرِ"] }
+            ]},
+            { id: 96, name: "Al-'Alaq", english: "The Clot", ayahs: [
+                { num: 1, full: "ٱقْرَأْ بِٱسْمِ رَبِّكَ ٱلَّذِى خَلَقَ", target: "ٱقْرَأْ", distractors: ["ٱكْتُبْ", "ٱسْمَعْ", "ٱنظُرْ"] }
+            ]},
+            { id: 95, name: "At-Tin", english: "The Fig", ayahs: [
+                { num: 1, full: "وَٱلتِّينِ وَٱلزَّيْتُونِ", target: "وَٱلزَّيْتُونِ", distractors: ["وَٱلرُّمَّانِ", "وَٱلنَّخْلِ", "وَٱلْعِنَبِ"] }
+            ]},
+            { id: 94, name: "Ash-Sharh", english: "The Relief", ayahs: [
+                { num: 1, full: "أَلَمْ نَشْرَحْ لَكَ صَدْرَكَ", target: "صَدْرَكَ", distractors: ["قَلْبَكَ", "عَقْلَكَ", "وَجْهَكَ"] }
+            ]},
+            { id: 93, name: "Ad-Duha", english: "The Morning Hours", ayahs: [
+                { num: 1, full: "وَٱلضُّحَىٰ", target: "وَٱلضُّحَىٰ", distractors: ["وَٱلْفَجْرِ", "وَٱلشَّمْسِ", "وَٱلنَّهَارِ"] }
+            ]},
+            { id: 92, name: "Al-Layl", english: "The Night", ayahs: [
+                { num: 1, full: "وَٱللَّيْلِ إِذَا يَغْشَىٰ", target: "يَغْشَىٰ", distractors: ["تَجَلَّىٰ", "أَقْبَلَ", "سَجَىٰ"] }
+            ]},
+            { id: 91, name: "Ash-Shams", english: "The Sun", ayahs: [
+                { num: 1, full: "وَٱلشَّمْسِ وَضُحَىٰهَا", target: "وَضُحَىٰهَا", distractors: ["وَنُورِهَا", "وَقَمَرِهَا", "وَضَوْئِهَا"] }
+            ]},
+            { id: 90, name: "Al-Balad", english: "The City", ayahs: [
+                { num: 1, full: "لَآ أُقْسِمُ بِهَٰذَا ٱلْبَلَدِ", target: "ٱلْبَلَدِ", distractors: ["ٱلْحَرَمِ", "ٱلْوَادِى", "ٱلْجَبَلِ"] }
+            ]},
+            { id: 89, name: "Al-Fajr", english: "The Dawn", ayahs: [
+                { num: 1, full: "وَٱلْفَجْرِ", target: "وَٱلْفَجْرِ", distractors: ["وَٱلْعَصْرِ", "وَٱلضُّحَىٰ", "وَٱلنَّهَارِ"] }
+            ]},
+            { id: 88, name: "Al-Ghashiyah", english: "The Overwhelming", ayahs: [
+                { num: 1, full: "هَلْ أَتَىٰكَ حَدِيثُ ٱلْغَٰشِيَةِ", target: "ٱلْغَٰشِيَةِ", distractors: ["ٱلْقِيَٰمَةِ", "ٱلْوَاقِعَةِ", "ٱلْقَارِعَةِ"] }
+            ]},
+            { id: 87, name: "Al-A'la", english: "The Most High", ayahs: [
+                { num: 1, full: "سَبِّحِ ٱسْمَ رَبِّكَ ٱلْأَعْلَى", target: "ٱلْأَعْلَى", distractors: ["ٱلْعَظِيمِ", "ٱلْكَرِيمِ", "ٱلْحَكِيمِ"] }
+            ]},
+            { id: 86, name: "At-Tariq", english: "The Night Comer", ayahs: [
+                { num: 1, full: "وَٱلسَّمَآءِ وَٱلطَّارِقِ", target: "وَٱلطَّارِقِ", distractors: ["وَٱلْنَّجْمِ", "وَٱلْقَمَرِ", "وَٱلشَّمْسِ"] }
+            ]},
+            { id: 85, name: "Al-Buruj", english: "The Great Stars", ayahs: [
+                { num: 1, full: "وَٱلسَّمَآءِ ذَاتِ ٱلْبُرُوجِ", target: "ٱلْبُرُوجِ", distractors: ["ٱلْنُّجُومِ", "ٱلْأَرْضِ", "ٱلْحِجَابِ"] }
+            ]},
+            { id: 84, name: "Al-Inshiqaq", english: "The Splitting Open", ayahs: [
+                { num: 1, full: "إِذَا ٱلسَّمَآءُ ٱنشَقَّتْ", target: "ٱنشَقَّتْ", distractors: ["فُطِرَتْ", "كُوِّرَتْ", "سُجِّرَتْ"] }
+            ]},
+            { id: 83, name: "Al-Mutaffifin", english: "The Defrauders", ayahs: [
+                { num: 1, full: "وَيْلٌ لِّلْمُطَفِّفِينَ", target: "لِّلْمُطَفِّفِينَ", distractors: ["لِّلْكَاذِبِينَ", "لِّلْمُنَافِقِينَ", "لِّلْغَٰفِلِينَ"] }
+            ]},
+            { id: 82, name: "Al-Infitar", english: "The Cleaving", ayahs: [
+                { num: 1, full: "إِذَا ٱلسَّمَآءُ ٱنفَطَرَتْ", target: "ٱنفَطَرَتْ", distractors: ["ٱنشَقَّتْ", "كُوِّرَتْ", "سُيِّرَتْ"] }
+            ]},
+            { id: 81, name: "At-Takwir", english: "The Overthrowing", ayahs: [
+                { num: 1, full: "إِذَا ٱلشَّمْسُ كُوِّرَتْ", target: "كُوِّرَتْ", distractors: ["خَسَفَتْ", "غَٰرَتْ", "زُلْزِلَتْ"] }
+            ]},
+            { id: 80, name: "'Abasa", english: "He Frowned", ayahs: [
+                { num: 1, full: "عَبَسَ وَتَوَلَّىٰ", target: "عَبَسَ", distractors: ["غَضِبَ", "نَظَرَ", "أَعْرَضَ"] },
+                { num: 2, full: "أَن جَآءَهُ ٱلْأَعْمَىٰ", target: "ٱلْأَعْمَىٰ", distractors: ["ٱلْفَقِيرُ", "ٱلْيَتِيمُ", "ٱلشَّيْخُ"] }
+            ]}
+        ];
+
+        // COMPLETE VERSE TEXT (every ayah, in order). Surahs not listed here are still partial.
+        const QURAN = {"1": ["بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ", "ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ", "ٱلرَّحْمَٰنِ ٱلرَّحِيمِ", "مَٰلِكِ يَوْمِ ٱلدِّينِ", "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ", "ٱهْدِنَا ٱلصِّرَٰطَ ٱلْمُسْتَقِيمَ", "صِرَٰطَ ٱلَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ ٱلْمَغْضُوبِ عَلَيْهِمْ وَلَا ٱلضَّآلِّينَ"], "114": ["قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ", "مَلِكِ ٱلنَّاسِ", "إِلَٰهِ ٱلنَّاسِ", "مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ", "ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ", "مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ"], "113": ["قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ", "مِن شَرِّ مَا خَلَقَ", "وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ", "وَمِن شَرِّ ٱلنَّفَّٰثَٰتِ فِى ٱلْعُقَدِ", "وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ"], "112": ["قُلْ هُوَ ٱللَّهُ أَحَدٌ", "ٱللَّهُ ٱلصَّمَدُ", "لَمْ يَلِدْ وَلَمْ يُولَدْ", "وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ"], "111": ["تَبَّتْ يَدَآ أَبِى لَهَبٍ وَتَبَّ", "مَآ أَغْنَىٰ عَنْهُ مَالُهُۥ وَمَا كَسَبَ", "سَيَصْلَىٰ نَارًا ذَاتَ لَهَبٍ", "وَٱمْرَأَتُهُۥ حَمَّالَةَ ٱلْحَطَبِ", "فِى جِيدِهَا حَبْلٌ مِّن مَّسَدٍۭ"], "110": ["إِذَا جَآءَ نَصْرُ ٱللَّهِ وَٱلْفَتْحُ", "وَرَأَيْتَ ٱلنَّاسَ يَدْخُلُونَ فِى دِينِ ٱللَّهِ أَفْوَاجًا", "فَسَبِّحْ بِحَمْدِ رَبِّكَ وَٱسْتَغْفِرْهُ إِنَّهُۥ كَانَ تَوَّابًۢا"], "109": ["قُلْ يَٰٓأَيُّهَا ٱلْكَٰفِرُونَ", "لَآ أَعْبُدُ مَا تَعْبُدُونَ", "وَلَآ أَنتُمْ عَٰبِدُونَ مَآ أَعْبُدُ", "وَلَآ أَنَا۠ عَابِدٌ مَّا عَبَدتُّمْ", "وَلَآ أَنتُمْ عَٰبِدُونَ مَآ أَعْبُدُ", "لَكُمْ دِينُكُمْ وَلِىَ دِينِ"], "108": ["إِنَّآ أَعْطَيْنَٰكَ ٱلْكَوْثَرَ", "فَصَلِّ لِرَبِّكَ وَٱنْحَرْ", "إِنَّ شَانِئَكَ هُوَ ٱلْأَبْتَرُ"], "107": ["أَرَءَيْتَ ٱلَّذِى يُكَذِّبُ بِٱلدِّينِ", "فَذَٰلِكَ ٱلَّذِى يَدُعُّ ٱلْيَتِيمَ", "وَلَا يَحُضُّ عَلَىٰ طَعَامِ ٱلْمِسْكِينِ", "فَوَيْلٌ لِّلْمُصَلِّينَ", "ٱلَّذِينَ هُمْ عَن صَلَاتِهِمْ سَاهُونَ", "ٱلَّذِينَ هُمْ يُرَآءُونَ", "وَيَمْنَعُونَ ٱلْمَاعُونَ"], "106": ["لِإِيلَٰفِ قُرَيْشٍ", "إِۦلَٰفِهِمْ رِحْلَةَ ٱلشِّتَآءِ وَٱلصَّيْفِ", "فَلْيَعْبُدُوا۟ رَبَّ هَٰذَا ٱلْبَيْتِ", "ٱلَّذِىٓ أَطْعَمَهُم مِّن جُوعٍ وَءَامَنَهُم مِّنْ خَوْفٍۭ"], "105": ["أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِأَصْحَٰبِ ٱلْفِيلِ", "أَلَمْ يَجْعَلْ كَيْدَهُمْ فِى تَضْلِيلٍ", "وَأَرْسَلَ عَلَيْهِمْ طَيْرًا أَبَابِيلَ", "تَرْمِيهِم بِحِجَارَةٍ مِّن سِجِّيلٍ", "فَجَعَلَهُمْ كَعَصْفٍ مَّأْكُولٍۭ"], "104": ["وَيْلٌ لِّكُلِّ هُمَزَةٍ لُّمَزَةٍ", "ٱلَّذِى جَمَعَ مَالًا وَعَدَّدَهُۥ", "يَحْسَبُ أَنَّ مَالَهُۥٓ أَخْلَدَهُۥ", "كَلَّا لَيُنۢبَذَنَّ فِى ٱلْحُطَمَةِ", "وَمَآ أَدْرَىٰكَ مَا ٱلْحُطَمَةُ", "نَارُ ٱللَّهِ ٱلْمُوقَدَةُ", "ٱلَّتِى تَطَّلِعُ عَلَى ٱلْأَفْـِٔدَةِ", "إِنَّهَا عَلَيْهِم مُّؤْصَدَةٌ", "فِى عَمَدٍ مُّمَدَّدَةٍۭ"], "103": ["وَٱلْعَصْرِ", "إِنَّ ٱلْإِنسَٰنَ لَفِى خُسْرٍ", "إِلَّا ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّٰلِحَٰتِ وَتَوَاصَوْا۟ بِٱلْحَقِّ وَتَوَاصَوْا۟ بِٱلصَّبْرِ"], "102": ["أَلْهَىٰكُمُ ٱلتَّكَاثُرُ", "حَتَّىٰ زُرْتُمُ ٱلْمَقَابِرَ", "كَلَّا سَوْفَ تَعْلَمُونَ", "ثُمَّ كَلَّا سَوْفَ تَعْلَمُونَ", "كَلَّا لَوْ تَعْلَمُونَ عِلْمَ ٱلْيَقِينِ", "لَتَرَوُنَّ ٱلْجَحِيمَ", "ثُمَّ لَتَرَوُنَّهَا عَيْنَ ٱلْيَقِينِ", "ثُمَّ لَتُسْـَٔلُنَّ يَوْمَئِذٍ عَنِ ٱلنَّعِيمِ"], "101": ["ٱلْقَارِعَةُ", "مَا ٱلْقَارِعَةُ", "وَمَآ أَدْرَىٰكَ مَا ٱلْقَارِعَةُ", "يَوْمَ يَكُونُ ٱلنَّاسُ كَٱلْفَرَاشِ ٱلْمَبْثُوثِ", "وَتَكُونُ ٱلْجِبَالُ كَٱلْعِهْنِ ٱلْمَنفُوشِ", "فَأَمَّا مَن ثَقُلَتْ مَوَٰزِينُهُۥ", "فَهُوَ فِى عِيشَةٍ رَّاضِيَةٍ", "وَأَمَّا مَنْ خَفَّتْ مَوَٰزِينُهُۥ", "فَأُمُّهُۥ هَاوِيَةٌ", "وَمَآ أَدْرَىٰكَ مَا هِيَهْ", "نَارٌ حَامِيَةٌۢ"], "100": ["وَٱلْعَٰدِيَٰتِ ضَبْحًا", "فَٱلْمُورِيَٰتِ قَدْحًا", "فَٱلْمُغِيرَٰتِ صُبْحًا", "فَأَثَرْنَ بِهِۦ نَقْعًا", "فَوَسَطْنَ بِهِۦ جَمْعًا", "إِنَّ ٱلْإِنسَٰنَ لِرَبِّهِۦ لَكَنُودٌ", "وَإِنَّهُۥ عَلَىٰ ذَٰلِكَ لَشَهِيدٌ", "وَإِنَّهُۥ لِحُبِّ ٱلْخَيْرِ لَشَدِيدٌ", "أَفَلَا يَعْلَمُ إِذَا بُعْثِرَ مَا فِى ٱلْقُبُورِ", "وَحُصِّلَ مَا فِى ٱلصُّدُورِ", "إِنَّ رَبَّهُم بِهِمْ يَوْمَئِذٍ لَّخَبِيرٌۢ"], "99": ["إِذَا زُلْزِلَتِ ٱلْأَرْضُ زِلْزَالَهَا", "وَأَخْرَجَتِ ٱلْأَرْضُ أَثْقَالَهَا", "وَقَالَ ٱلْإِنسَٰنُ مَا لَهَا", "يَوْمَئِذٍ تُحَدِّثُ أَخْبَارَهَا", "بِأَنَّ رَبَّكَ أَوْحَىٰ لَهَا", "يَوْمَئِذٍ يَصْدُرُ ٱلنَّاسُ أَشْتَاتًا لِّيُرَوْا۟ أَعْمَٰلَهُمْ", "فَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ خَيْرًا يَرَهُۥ", "وَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ شَرًّا يَرَهُۥ"]};
+
+        Object.assign(QURAN, {"97": ["إِنَّآ أَنزَلْنَٰهُ فِى لَيْلَةِ ٱلْقَدْرِ", "وَمَآ أَدْرَىٰكَ مَا لَيْلَةُ ٱلْقَدْرِ", "لَيْلَةُ ٱلْقَدْرِ خَيْرٌ مِّنْ أَلْفِ شَهْرٍ", "تَنَزَّلُ ٱلْمَلَٰٓئِكَةُ وَٱلرُّوحُ فِيهَا بِإِذْنِ رَبِّهِم مِّن كُلِّ أَمْرٍ", "سَلَٰمٌ هِىَ حَتَّىٰ مَطْلَعِ ٱلْفَجْرِ"], "96": ["ٱقْرَأْ بِٱسْمِ رَبِّكَ ٱلَّذِى خَلَقَ", "خَلَقَ ٱلْإِنسَٰنَ مِنْ عَلَقٍ", "ٱقْرَأْ وَرَبُّكَ ٱلْأَكْرَمُ", "ٱلَّذِى عَلَّمَ بِٱلْقَلَمِ", "عَلَّمَ ٱلْإِنسَٰنَ مَا لَمْ يَعْلَمْ", "كَلَّآ إِنَّ ٱلْإِنسَٰنَ لَيَطْغَىٰٓ", "أَن رَّءَاهُ ٱسْتَغْنَىٰٓ", "إِنَّ إِلَىٰ رَبِّكَ ٱلرُّجْعَىٰٓ", "أَرَءَيْتَ ٱلَّذِى يَنْهَىٰ", "عَبْدًا إِذَا صَلَّىٰٓ", "أَرَءَيْتَ إِن كَانَ عَلَى ٱلْهُدَىٰٓ", "أَوْ أَمَرَ بِٱلتَّقْوَىٰٓ", "أَرَءَيْتَ إِن كَذَّبَ وَتَوَلَّىٰٓ", "أَلَمْ يَعْلَم بِأَنَّ ٱللَّهَ يَرَىٰ", "كَلَّا لَئِن لَّمْ يَنتَهِ لَنَسْفَعًۢا بِٱلنَّاصِيَةِ", "نَاصِيَةٍ كَٰذِبَةٍ خَاطِئَةٍ", "فَلْيَدْعُ نَادِيَهُۥ", "سَنَدْعُ ٱلزَّبَانِيَةَ", "كَلَّا لَا تُطِعْهُ وَٱسْجُدْ وَٱقْتَرِب"], "95": ["وَٱلتِّينِ وَٱلزَّيْتُونِ", "وَطُورِ سِينِينَ", "وَهَٰذَا ٱلْبَلَدِ ٱلْأَمِينِ", "لَقَدْ خَلَقْنَا ٱلْإِنسَٰنَ فِىٓ أَحْسَنِ تَقْوِيمٍ", "ثُمَّ رَدَدْنَٰهُ أَسْفَلَ سَٰفِلِينَ", "إِلَّا ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّٰلِحَٰتِ فَلَهُمْ أَجْرٌ غَيْرُ مَمْنُونٍ", "فَمَا يُكَذِّبُكَ بَعْدُ بِٱلدِّينِ", "أَلَيْسَ ٱللَّهُ بِأَحْكَمِ ٱلْحَٰكِمِينَ"], "94": ["أَلَمْ نَشْرَحْ لَكَ صَدْرَكَ", "وَوَضَعْنَا عَنكَ وِزْرَكَ", "ٱلَّذِىٓ أَنقَضَ ظَهْرَكَ", "وَرَفَعْنَا لَكَ ذِكْرَكَ", "فَإِنَّ مَعَ ٱلْعُسْرِ يُسْرًا", "إِنَّ مَعَ ٱلْعُسْرِ يُسْرًا", "فَإِذَا فَرَغْتَ فَٱنصَبْ", "وَإِلَىٰ رَبِّكَ فَٱرْغَب"], "93": ["وَٱلضُّحَىٰ", "وَٱلَّيْلِ إِذَا سَجَىٰ", "مَا وَدَّعَكَ رَبُّكَ وَمَا قَلَىٰ", "وَلَلْـَٔاخِرَةُ خَيْرٌ لَّكَ مِنَ ٱلْأُولَىٰ", "وَلَسَوْفَ يُعْطِيكَ رَبُّكَ فَتَرْضَىٰٓ", "أَلَمْ يَجِدْكَ يَتِيمًا فَـَٔاوَىٰ", "وَوَجَدَكَ ضَآلًّا فَهَدَىٰ", "وَوَجَدَكَ عَآئِلًا فَأَغْنَىٰ", "فَأَمَّا ٱلْيَتِيمَ فَلَا تَقْهَرْ", "وَأَمَّا ٱلسَّآئِلَ فَلَا تَنْهَرْ", "وَأَمَّا بِنِعْمَةِ رَبِّكَ فَحَدِّثْ"]});
+
+        Object.assign(QURAN, {"98": ["لَمْ يَكُنِ ٱلَّذِينَ كَفَرُوا۟ مِنْ أَهْلِ ٱلْكِتَٰبِ وَٱلْمُشْرِكِينَ مُنفَكِّينَ حَتَّىٰ تَأْتِيَهُمُ ٱلْبَيِّنَةُ", "رَسُولٌ مِّنَ ٱللَّهِ يَتْلُوا۟ صُحُفًا مُّطَهَّرَةً", "فِيهَا كُتُبٌ قَيِّمَةٌ", "وَمَا تَفَرَّقَ ٱلَّذِينَ أُوتُوا۟ ٱلْكِتَٰبَ إِلَّا مِنۢ بَعْدِ مَا جَآءَتْهُمُ ٱلْبَيِّنَةُ", "وَمَآ أُمِرُوٓا۟ إِلَّا لِيَعْبُدُوا۟ ٱللَّهَ مُخْلِصِينَ لَهُ ٱلدِّينَ حُنَفَآءَ وَيُقِيمُوا۟ ٱلصَّلَوٰةَ وَيُؤْتُوا۟ ٱلزَّكَوٰةَ وَذَٰلِكَ دِينُ ٱلْقَيِّمَةِ", "إِنَّ ٱلَّذِينَ كَفَرُوا۟ مِنْ أَهْلِ ٱلْكِتَٰبِ وَٱلْمُشْرِكِينَ فِى نَارِ جَهَنَّمَ خَٰلِدِينَ فِيهَآ أُو۟لَٰٓئِكَ هُمْ شَرُّ ٱلْبَرِيَّةِ", "إِنَّ ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّٰلِحَٰتِ أُو۟لَٰٓئِكَ هُمْ خَيْرُ ٱلْبَرِيَّةِ", "جَزَآؤُهُمْ عِندَ رَبِّهِمْ جَنَّٰتُ عَدْنٍ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَٰرُ خَٰلِدِينَ فِيهَآ أَبَدًا رَّضِىَ ٱللَّهُ عَنْهُمْ وَرَضُوا۟ عَنْهُ ذَٰلِكَ لِمَنْ خَشِىَ رَبَّهُۥ"], "92": ["وَٱلَّيْلِ إِذَا يَغْشَىٰ", "وَٱلنَّهَارِ إِذَا تَجَلَّىٰ", "وَمَا خَلَقَ ٱلذَّكَرَ وَٱلْأُنثَىٰٓ", "إِنَّ سَعْيَكُمْ لَشَتَّىٰ", "فَأَمَّا مَنْ أَعْطَىٰ وَٱتَّقَىٰ", "وَصَدَّقَ بِٱلْحُسْنَىٰ", "فَسَنُيَسِّرُهُۥ لِلْيُسْرَىٰ", "وَأَمَّا مَنۢ بَخِلَ وَٱسْتَغْنَىٰ", "وَكَذَّبَ بِٱلْحُسْنَىٰ", "فَسَنُيَسِّرُهُۥ لِلْعُسْرَىٰ", "وَمَا يُغْنِى عَنْهُ مَالُهُۥٓ إِذَا تَرَدَّىٰٓ", "إِنَّ عَلَيْنَا لَلْهُدَىٰ", "وَإِنَّ لَنَا لَلْـَٔاخِرَةَ وَٱلْأُولَىٰ", "فَأَنذَرْتُكُمْ نَارًا تَلَظَّىٰ", "لَا يَصْلَىٰهَآ إِلَّا ٱلْأَشْقَى", "ٱلَّذِى كَذَّبَ وَتَوَلَّىٰ", "وَسَيُجَنَّبُهَا ٱلْأَتْقَى", "ٱلَّذِى يُؤْتِى مَالَهُۥ يَتَزَكَّىٰ", "وَمَا لِأَحَدٍ عِندَهُۥ مِن نِّعْمَةٍ تُجْزَىٰٓ", "إِلَّا ٱبْتِغَآءَ وَجْهِ رَبِّهِ ٱلْأَعْلَىٰ", "وَلَسَوْفَ يَرْضَىٰ"], "91": ["وَٱلشَّمْسِ وَضُحَىٰهَا", "وَٱلْقَمَرِ إِذَا تَلَىٰهَا", "وَٱلنَّهَارِ إِذَا جَلَّىٰهَا", "وَٱلَّيْلِ إِذَا يَغْشَىٰهَا", "وَٱلسَّمَآءِ وَمَا بَنَىٰهَا", "وَٱلْأَرْضِ وَمَا طَحَىٰهَا", "وَنَفْسٍ وَمَا سَوَّىٰهَا", "فَأَلْهَمَهَا فُجُورَهَا وَتَقْوَىٰهَا", "قَدْ أَفْلَحَ مَن زَكَّىٰهَا", "وَقَدْ خَابَ مَن دَسَّىٰهَا", "كَذَّبَتْ ثَمُودُ بِطَغْوَىٰهَآ", "إِذِ ٱنۢبَعَثَ أَشْقَىٰهَا", "فَقَالَ لَهُمْ رَسُولُ ٱللَّهِ نَاقَةَ ٱللَّهِ وَسُقْيَٰهَا", "فَكَذَّبُوهُ فَعَقَرُوهَا فَدَمْدَمَ عَلَيْهِمْ رَبُّهُم بِذَنۢبِهِمْ فَسَوَّىٰهَا", "وَلَا يَخَافُ عُقْبَٰهَا"], "90": ["لَآ أُقْسِمُ بِهَٰذَا ٱلْبَلَدِ", "وَأَنتَ حِلّۢ بِهَٰذَا ٱلْبَلَدِ", "وَوَالِدٍ وَمَا وَلَدَ", "لَقَدْ خَلَقْنَا ٱلْإِنسَٰنَ فِى كَبَدٍ", "أَيَحْسَبُ أَن لَّن يَقْدِرَ عَلَيْهِ أَحَدٌ", "يَقُولُ أَهْلَكْتُ مَالًا لُّبَدًا", "أَيَحْسَبُ أَن لَّمْ يَرَهُۥٓ أَحَدٌ", "أَلَمْ نَجْعَل لَّهُۥ عَيْنَيْنِ", "وَلِسَانًا وَشَفَتَيْنِ", "وَهَدَيْنَٰهُ ٱلنَّجْدَيْنِ", "فَلَا ٱقْتَحَمَ ٱلْعَقَبَةَ", "وَمَآ أَدْرَىٰكَ مَا ٱلْعَقَبَةُ", "فَكُّ رَقَبَةٍ", "أَوْ إِطْعَٰمٌ فِى يَوْمٍ ذِى مَسْغَبَةٍ", "يَتِيمًا ذَا مَقْرَبَةٍ", "أَوْ مِسْكِينًا ذَا مَتْرَبَةٍ", "ثُمَّ كَانَ مِنَ ٱلَّذِينَ ءَامَنُوا۟ وَتَوَاصَوْا۟ بِٱلصَّبْرِ وَتَوَاصَوْا۟ بِٱلْمَرْحَمَةِ", "أُو۟لَٰٓئِكَ أَصْحَٰبُ ٱلْمَيْمَنَةِ", "وَٱلَّذِينَ كَفَرُوا۟ بِـَٔايَٰتِنَا هُمْ أَصْحَٰبُ ٱلْمَشْـَٔمَةِ", "عَلَيْهِمْ نَارٌ مُّؤْصَدَةٌۢ"]});
+
+        Object.assign(QURAN, {"87": ["سَبِّحِ ٱسْمَ رَبِّكَ ٱلْأَعْلَى", "ٱلَّذِى خَلَقَ فَسَوَّىٰ", "وَٱلَّذِى قَدَّرَ فَهَدَىٰ", "وَٱلَّذِىٓ أَخْرَجَ ٱلْمَرْعَىٰ", "فَجَعَلَهُۥ غُثَآءً أَحْوَىٰ", "سَنُقْرِئُكَ فَلَا تَنسَىٰٓ", "إِلَّا مَا شَآءَ ٱللَّهُ إِنَّهُۥ يَعْلَمُ ٱلْجَهْرَ وَمَا يَخْفَىٰ", "وَنُيَسِّرُكَ لِلْيُسْرَىٰ", "فَذَكِّرْ إِن نَّفَعَتِ ٱلذِّكْرَىٰ", "سَيَذَّكَّرُ مَن يَخْشَىٰ", "وَيَتَجَنَّبُهَا ٱلْأَشْقَى", "ٱلَّذِى يَصْلَى ٱلنَّارَ ٱلْكُبْرَىٰ", "ثُمَّ لَا يَمُوتُ فِيهَا وَلَا يَحْيَىٰ", "قَدْ أَفْلَحَ مَن تَزَكَّىٰ", "وَذَكَرَ ٱسْمَ رَبِّهِۦ فَصَلَّىٰ", "بَلْ تُؤْثِرُونَ ٱلْحَيَوٰةَ ٱلدُّنْيَا", "وَٱلْـَٔاخِرَةُ خَيْرٌ وَأَبْقَىٰٓ", "إِنَّ هَٰذَا لَفِى ٱلصُّحُفِ ٱلْأُولَىٰ", "صُحُفِ إِبْرَٰهِيمَ وَمُوسَىٰ"], "86": ["وَٱلسَّمَآءِ وَٱلطَّارِقِ", "وَمَآ أَدْرَىٰكَ مَا ٱلطَّارِقُ", "ٱلنَّجْمُ ٱلثَّاقِبُ", "إِن كُلُّ نَفْسٍ لَّمَّا عَلَيْهَا حَافِظٌ", "فَلْيَنظُرِ ٱلْإِنسَٰنُ مِمَّ خُلِقَ", "خُلِقَ مِن مَّآءٍ دَافِقٍ", "يَخْرُجُ مِنۢ بَيْنِ ٱلصُّلْبِ وَٱلتَّرَآئِبِ", "إِنَّهُۥ عَلَىٰ رَجْعِهِۦ لَقَادِرٌ", "يَوْمَ تُبْلَى ٱلسَّرَآئِرُ", "فَمَا لَهُۥ مِن قُوَّةٍ وَلَا نَاصِرٍ", "وَٱلسَّمَآءِ ذَاتِ ٱلرَّجْعِ", "وَٱلْأَرْضِ ذَاتِ ٱلصَّدْعِ", "إِنَّهُۥ لَقَوْلٌ فَصْلٌ", "وَمَا هُوَ بِٱلْهَزْلِ", "إِنَّهُمْ يَكِيدُونَ كَيْدًا", "وَأَكِيدُ كَيْدًا", "فَمَهِّلِ ٱلْكَٰفِرِينَ أَمْهِلْهُمْ رُوَيْدًۢا"], "89": ["وَٱلْفَجْرِ", "وَلَيَالٍ عَشْرٍ", "وَٱلشَّفْعِ وَٱلْوَتْرِ", "وَٱلَّيْلِ إِذَا يَسْرِ", "هَلْ فِى ذَٰلِكَ قَسَمٌ لِّذِى حِجْرٍ", "أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِعَادٍ", "إِرَمَ ذَاتِ ٱلْعِمَادِ", "ٱلَّتِى لَمْ يُخْلَقْ مِثْلُهَا فِى ٱلْبِلَٰدِ", "وَثَمُودَ ٱلَّذِينَ جَابُوا۟ ٱلصَّخْرَ بِٱلْوَادِ", "وَفِرْعَوْنَ ذِى ٱلْأَوْتَادِ", "ٱلَّذِينَ طَغَوْا۟ فِى ٱلْبِلَٰدِ", "فَأَكْثَرُوا۟ فِيهَا ٱلْفَسَادَ", "فَصَبَّ عَلَيْهِمْ رَبُّكَ سَوْطَ عَذَابٍ", "إِنَّ رَبَّكَ لَبِٱلْمِرْصَادِ", "فَأَمَّا ٱلْإِنسَٰنُ إِذَا مَا ٱبْتَلَىٰهُ رَبُّهُۥ فَأَكْرَمَهُۥ وَنَعَّمَهُۥ فَيَقُولُ رَبِّىٓ أَكْرَمَنِ", "وَأَمَّآ إِذَا مَا ٱبْتَلَىٰهُ فَقَدَرَ عَلَيْهِ رِزْقَهُۥ فَيَقُولُ رَبِّىٓ أَهَٰنَنِ", "كَلَّا بَل لَّا تُكْرِمُونَ ٱلْيَتِيمَ", "وَلَا تَحَٰٓضُّونَ عَلَىٰ طَعَامِ ٱلْمِسْكِينِ", "وَتَأْكُلُونَ ٱلتُّرَاثَ أَكْلًا لَّمًّا", "وَتُحِبُّونَ ٱلْمَالَ حُبًّا جَمًّا", "كَلَّآ إِذَا دُكَّتِ ٱلْأَرْضُ دَكًّا دَكًّا", "وَجَآءَ رَبُّكَ وَٱلْمَلَكُ صَفًّا صَفًّا", "وَجِا۟ىٓءَ يَوْمَئِذٍۭ بِجَهَنَّمَ يَوْمَئِذٍ يَتَذَكَّرُ ٱلْإِنسَٰنُ وَأَنَّىٰ لَهُ ٱلذِّكْرَىٰ", "يَقُولُ يَٰلَيْتَنِى قَدَّمْتُ لِحَيَاتِى", "فَيَوْمَئِذٍ لَّا يُعَذِّبُ عَذَابَهُۥٓ أَحَدٌ", "وَلَا يُوثِقُ وَثَاقَهُۥٓ أَحَدٌ", "يَٰٓأَيَّتُهَا ٱلنَّفْسُ ٱلْمُطْمَئِنَّةُ", "ٱرْجِعِىٓ إِلَىٰ رَبِّكِ رَاضِيَةً مَّرْضِيَّةً", "فَٱدْخُلِى فِى عِبَٰدِى", "وَٱدْخُلِى جَنَّتِى"]});
+
+        Object.assign(QURAN, {"88": ["هَلْ أَتَىٰكَ حَدِيثُ ٱلْغَٰشِيَةِ", "وُجُوهٌ يَوْمَئِذٍ خَٰشِعَةٌ", "عَامِلَةٌ نَّاصِبَةٌ", "تَصْلَىٰ نَارًا حَامِيَةً", "تُسْقَىٰ مِنْ عَيْنٍ ءَانِيَةٍ", "لَّيْسَ لَهُمْ طَعَامٌ إِلَّا مِن ضَرِيعٍ", "لَّا يُسْمِنُ وَلَا يُغْنِى مِن جُوعٍ", "وُجُوهٌ يَوْمَئِذٍ نَّاعِمَةٌ", "لِّسَعْيِهَا رَاضِيَةٌ", "فِى جَنَّةٍ عَالِيَةٍ", "لَّا تَسْمَعُ فِيهَا لَٰغِيَةً", "فِيهَا عَيْنٌ جَارِيَةٌ", "فِيهَا سُرُرٌ مَّرْفُوعَةٌ", "وَأَكْوَابٌ مَّوْضُوعَةٌ", "وَنَمَارِقُ مَصْفُوفَةٌ", "وَزَرَابِىُّ مَبْثُوثَةٌ", "أَفَلَا يَنظُرُونَ إِلَى ٱلْإِبِلِ كَيْفَ خُلِقَتْ", "وَإِلَى ٱلسَّمَآءِ كَيْفَ رُفِعَتْ", "وَإِلَى ٱلْجِبَالِ كَيْفَ نُصِبَتْ", "وَإِلَى ٱلْأَرْضِ كَيْفَ سُطِحَتْ", "فَذَكِّرْ إِنَّمَآ أَنتَ مُذَكِّرٌ", "لَّسْتَ عَلَيْهِم بِمُصَيْطِرٍ", "إِلَّا مَن تَوَلَّىٰ وَكَفَرَ", "فَيُعَذِّبُهُ ٱللَّهُ ٱلْعَذَابَ ٱلْأَكْبَرَ", "إِنَّ إِلَيْنَآ إِيَابَهُمْ", "ثُمَّ إِنَّ عَلَيْنَا حِسَابَهُم"], "85": ["وَٱلسَّمَآءِ ذَاتِ ٱلْبُرُوجِ", "وَٱلْيَوْمِ ٱلْمَوْعُودِ", "وَشَاهِدٍ وَمَشْهُودٍ", "قُتِلَ أَصْحَٰبُ ٱلْأُخْدُودِ", "ٱلنَّارِ ذَاتِ ٱلْوَقُودِ", "إِذْ هُمْ عَلَيْهَا قُعُودٌ", "وَهُمْ عَلَىٰ مَا يَفْعَلُونَ بِٱلْمُؤْمِنِينَ شُهُودٌ", "وَمَا نَقَمُوا۟ مِنْهُمْ إِلَّآ أَن يُؤْمِنُوا۟ بِٱللَّهِ ٱلْعَزِيزِ ٱلْحَمِيدِ", "ٱلَّذِى لَهُۥ مُلْكُ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ وَٱللَّهُ عَلَىٰ كُلِّ شَىْءٍ شَهِيدٌ", "إِنَّ ٱلَّذِينَ فَتَنُوا۟ ٱلْمُؤْمِنِينَ وَٱلْمُؤْمِنَٰتِ ثُمَّ لَمْ يَتُوبُوا۟ فَلَهُمْ عَذَابُ جَهَنَّمَ وَلَهُمْ عَذَابُ ٱلْحَرِيقِ", "إِنَّ ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّٰلِحَٰتِ لَهُمْ جَنَّٰتٌ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَٰرُ ذَٰلِكَ ٱلْفَوْزُ ٱلْكَبِيرُ", "إِنَّ بَطْشَ رَبِّكَ لَشَدِيدٌ", "إِنَّهُۥ هُوَ يُبْدِئُ وَيُعِيدُ", "وَهُوَ ٱلْغَفُورُ ٱلْوَدُودُ", "ذُو ٱلْعَرْشِ ٱلْمَجِيدُ", "فَعَّالٌ لِّمَا يُرِيدُ", "هَلْ أَتَىٰكَ حَدِيثُ ٱلْجُنُودِ", "فِرْعَوْنَ وَثَمُودَ", "بَلِ ٱلَّذِينَ كَفَرُوا۟ فِى تَكْذِيبٍ", "وَٱللَّهُ مِن وَرَآئِهِم مُّحِيطٌۢ", "بَلْ هُوَ قُرْءَانٌ مَّجِيدٌ", "فِى لَوْحٍ مَّحْفُوظٍۭ"], "82": ["إِذَا ٱلسَّمَآءُ ٱنفَطَرَتْ", "وَإِذَا ٱلْكَوَاكِبُ ٱنتَثَرَتْ", "وَإِذَا ٱلْبِحَارُ فُجِّرَتْ", "وَإِذَا ٱلْقُبُورُ بُعْثِرَتْ", "عَلِمَتْ نَفْسٌ مَّا قَدَّمَتْ وَأَخَّرَتْ", "يَٰٓأَيُّهَا ٱلْإِنسَٰنُ مَا غَرَّكَ بِرَبِّكَ ٱلْكَرِيمِ", "ٱلَّذِى خَلَقَكَ فَسَوَّىٰكَ فَعَدَلَكَ", "فِىٓ أَىِّ صُورَةٍ مَّا شَآءَ رَكَّبَكَ", "كَلَّا بَلْ تُكَذِّبُونَ بِٱلدِّينِ", "وَإِنَّ عَلَيْكُمْ لَحَٰفِظِينَ", "كِرَامًا كَٰتِبِينَ", "يَعْلَمُونَ مَا تَفْعَلُونَ", "إِنَّ ٱلْأَبْرَارَ لَفِى نَعِيمٍ", "وَإِنَّ ٱلْفُجَّارَ لَفِى جَحِيمٍ", "يَصْلَوْنَهَا يَوْمَ ٱلدِّينِ", "وَمَا هُمْ عَنْهَا بِغَآئِبِينَ", "وَمَآ أَدْرَىٰكَ مَا يَوْمُ ٱلدِّينِ", "ثُمَّ مَآ أَدْرَىٰكَ مَا يَوْمُ ٱلدِّينِ", "يَوْمَ لَا تَمْلِكُ نَفْسٌ لِّنَفْسٍ شَيْـًٔا وَٱلْأَمْرُ يَوْمَئِذٍ لِّلَّهِ"]});
+
+        Object.assign(QURAN, {"84": ["إِذَا ٱلسَّمَآءُ ٱنشَقَّتْ", "وَأَذِنَتْ لِرَبِّهَا وَحُقَّتْ", "وَإِذَا ٱلْأَرْضُ مُدَّتْ", "وَأَلْقَتْ مَا فِيهَا وَتَخَلَّتْ", "وَأَذِنَتْ لِرَبِّهَا وَحُقَّتْ", "يَٰٓأَيُّهَا ٱلْإِنسَٰنُ إِنَّكَ كَادِحٌ إِلَىٰ رَبِّكَ كَدْحًا فَمُلَٰقِيهِ", "فَأَمَّا مَنْ أُوتِىَ كِتَٰبَهُۥ بِيَمِينِهِۦ", "فَسَوْفَ يُحَاسَبُ حِسَابًا يَسِيرًا", "وَيَنقَلِبُ إِلَىٰٓ أَهْلِهِۦ مَسْرُورًا", "وَأَمَّا مَنْ أُوتِىَ كِتَٰبَهُۥ وَرَآءَ ظَهْرِهِۦ", "فَسَوْفَ يَدْعُوا۟ ثُبُورًا", "وَيَصْلَىٰ سَعِيرًا", "إِنَّهُۥ كَانَ فِىٓ أَهْلِهِۦ مَسْرُورًا", "إِنَّهُۥ ظَنَّ أَن لَّن يَحُورَ", "بَلَىٰٓ إِنَّ رَبَّهُۥ كَانَ بِهِۦ بَصِيرًا", "فَلَآ أُقْسِمُ بِٱلشَّفَقِ", "وَٱلَّيْلِ وَمَا وَسَقَ", "وَٱلْقَمَرِ إِذَا ٱتَّسَقَ", "لَتَرْكَبُنَّ طَبَقًا عَن طَبَقٍ", "فَمَا لَهُمْ لَا يُؤْمِنُونَ", "وَإِذَا قُرِئَ عَلَيْهِمُ ٱلْقُرْءَانُ لَا يَسْجُدُونَ", "بَلِ ٱلَّذِينَ كَفَرُوا۟ يُكَذِّبُونَ", "وَٱللَّهُ أَعْلَمُ بِمَا يُوعُونَ", "فَبَشِّرْهُم بِعَذَابٍ أَلِيمٍ", "إِلَّا ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّٰلِحَٰتِ لَهُمْ أَجْرٌ غَيْرُ مَمْنُونٍۭ"], "81": ["إِذَا ٱلشَّمْسُ كُوِّرَتْ", "وَإِذَا ٱلنُّجُومُ ٱنكَدَرَتْ", "وَإِذَا ٱلْجِبَالُ سُيِّرَتْ", "وَإِذَا ٱلْعِشَارُ عُطِّلَتْ", "وَإِذَا ٱلْوُحُوشُ حُشِرَتْ", "وَإِذَا ٱلْبِحَارُ سُجِّرَتْ", "وَإِذَا ٱلنُّفُوسُ زُوِّجَتْ", "وَإِذَا ٱلْمَوْءُۥدَةُ سُئِلَتْ", "بِأَىِّ ذَنۢبٍ قُتِلَتْ", "وَإِذَا ٱلصُّحُفُ نُشِرَتْ", "وَإِذَا ٱلسَّمَآءُ كُشِطَتْ", "وَإِذَا ٱلْجَحِيمُ سُعِّرَتْ", "وَإِذَا ٱلْجَنَّةُ أُزْلِفَتْ", "عَلِمَتْ نَفْسٌ مَّآ أَحْضَرَتْ", "فَلَآ أُقْسِمُ بِٱلْخُنَّسِ", "ٱلْجَوَارِ ٱلْكُنَّسِ", "وَٱلَّيْلِ إِذَا عَسْعَسَ", "وَٱلصُّبْحِ إِذَا تَنَفَّسَ", "إِنَّهُۥ لَقَوْلُ رَسُولٍ كَرِيمٍ", "ذِى قُوَّةٍ عِندَ ذِى ٱلْعَرْشِ مَكِينٍ", "مُّطَاعٍ ثَمَّ أَمِينٍ", "وَمَا صَاحِبُكُم بِمَجْنُونٍ", "وَلَقَدْ رَءَاهُ بِٱلْأُفُقِ ٱلْمُبِينِ", "وَمَا هُوَ عَلَى ٱلْغَيْبِ بِضَنِينٍ", "وَمَا هُوَ بِقَوْلِ شَيْطَٰنٍ رَّجِيمٍ", "فَأَيْنَ تَذْهَبُونَ", "إِنْ هُوَ إِلَّا ذِكْرٌ لِّلْعَٰلَمِينَ", "لِمَن شَآءَ مِنكُمْ أَن يَسْتَقِيمَ", "وَمَا تَشَآءُونَ إِلَّآ أَن يَشَآءَ ٱللَّهُ رَبُّ ٱلْعَٰلَمِينَ"]});
+
+        Object.assign(QURAN, {"83": ["وَيْلٌ لِّلْمُطَفِّفِينَ", "ٱلَّذِينَ إِذَا ٱكْتَالُوا۟ عَلَى ٱلنَّاسِ يَسْتَوْفُونَ", "وَإِذَا كَالُوهُمْ أَو وَّزَنُوهُمْ يُخْسِرُونَ", "أَلَا يَظُنُّ أُو۟لَٰٓئِكَ أَنَّهُم مَّبْعُوثُونَ", "لِيَوْمٍ عَظِيمٍ", "يَوْمَ يَقُومُ ٱلنَّاسُ لِرَبِّ ٱلْعَٰلَمِينَ", "كَلَّآ إِنَّ كِتَٰبَ ٱلْفُجَّارِ لَفِى سِجِّينٍ", "وَمَآ أَدْرَىٰكَ مَا سِجِّينٌ", "كِتَٰبٌ مَّرْقُومٌ", "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ", "ٱلَّذِينَ يُكَذِّبُونَ بِيَوْمِ ٱلدِّينِ", "وَمَا يُكَذِّبُ بِهِۦٓ إِلَّا كُلُّ مُعْتَدٍ أَثِيمٍ", "إِذَا تُتْلَىٰ عَلَيْهِ ءَايَٰتُنَا قَالَ أَسَٰطِيرُ ٱلْأَوَّلِينَ", "كَلَّا بَلْ رَانَ عَلَىٰ قُلُوبِهِم مَّا كَانُوا۟ يَكْسِبُونَ", "كَلَّآ إِنَّهُمْ عَن رَّبِّهِمْ يَوْمَئِذٍ لَّمَحْجُوبُونَ", "ثُمَّ إِنَّهُمْ لَصَالُوا۟ ٱلْجَحِيمِ", "ثُمَّ يُقَالُ هَٰذَا ٱلَّذِى كُنتُم بِهِۦ تُكَذِّبُونَ", "كَلَّآ إِنَّ كِتَٰبَ ٱلْأَبْرَارِ لَفِى عِلِّيِّينَ", "وَمَآ أَدْرَىٰكَ مَا عِلِّيُّونَ", "كِتَٰبٌ مَّرْقُومٌ", "يَشْهَدُهُ ٱلْمُقَرَّبُونَ", "إِنَّ ٱلْأَبْرَارَ لَفِى نَعِيمٍ", "عَلَى ٱلْأَرَآئِكِ يَنظُرُونَ", "تَعْرِفُ فِى وُجُوهِهِمْ نَضْرَةَ ٱلنَّعِيمِ", "يُسْقَوْنَ مِن رَّحِيقٍ مَّخْتُومٍ", "خِتَٰمُهُۥ مِسْكٌ وَفِى ذَٰلِكَ فَلْيَتَنَافَسِ ٱلْمُتَنَٰفِسُونَ", "وَمِزَاجُهُۥ مِن تَسْنِيمٍ", "عَيْنًا يَشْرَبُ بِهَا ٱلْمُقَرَّبُونَ", "إِنَّ ٱلَّذِينَ أَجْرَمُوا۟ كَانُوا۟ مِنَ ٱلَّذِينَ ءَامَنُوا۟ يَضْحَكُونَ", "وَإِذَا مَرُّوا۟ بِهِمْ يَتَغَامَزُونَ", "وَإِذَا ٱنقَلَبُوٓا۟ إِلَىٰٓ أَهْلِهِمُ ٱنقَلَبُوا۟ فَكِهِينَ", "وَإِذَا رَأَوْهُمْ قَالُوٓا۟ إِنَّ هَٰٓؤُلَآءِ لَضَآلُّونَ", "وَمَآ أُرْسِلُوا۟ عَلَيْهِمْ حَٰفِظِينَ", "فَٱلْيَوْمَ ٱلَّذِينَ ءَامَنُوا۟ مِنَ ٱلْكُفَّارِ يَضْحَكُونَ", "عَلَى ٱلْأَرَآئِكِ يَنظُرُونَ", "هَلْ ثُوِّبَ ٱلْكُفَّارُ مَا كَانُوا۟ يَفْعَلُونَ"]});
+
+        Object.assign(QURAN, {"80": ["عَبَسَ وَتَوَلَّىٰٓ", "أَن جَآءَهُ ٱلْأَعْمَىٰ", "وَمَا يُدْرِيكَ لَعَلَّهُۥ يَزَّكَّىٰٓ", "أَوْ يَذَّكَّرُ فَتَنفَعَهُ ٱلذِّكْرَىٰٓ", "أَمَّا مَنِ ٱسْتَغْنَىٰ", "فَأَنتَ لَهُۥ تَصَدَّىٰ", "وَمَا عَلَيْكَ أَلَّا يَزَّكَّىٰ", "وَأَمَّا مَن جَآءَكَ يَسْعَىٰ", "وَهُوَ يَخْشَىٰ", "فَأَنتَ عَنْهُ تَلَهَّىٰ", "كَلَّآ إِنَّهَا تَذْكِرَةٌ", "فَمَن شَآءَ ذَكَرَهُۥ", "فِى صُحُفٍ مُّكَرَّمَةٍ", "مَّرْفُوعَةٍ مُّطَهَّرَةٍۭ", "بِأَيْدِى سَفَرَةٍ", "كِرَامٍۭ بَرَرَةٍ", "قُتِلَ ٱلْإِنسَٰنُ مَآ أَكْفَرَهُۥ", "مِنْ أَىِّ شَىْءٍ خَلَقَهُۥ", "مِن نُّطْفَةٍ خَلَقَهُۥ فَقَدَّرَهُۥ", "ثُمَّ ٱلسَّبِيلَ يَسَّرَهُۥ", "ثُمَّ أَمَاتَهُۥ فَأَقْبَرَهُۥ", "ثُمَّ إِذَا شَآءَ أَنشَرَهُۥ", "كَلَّا لَمَّا يَقْضِ مَآ أَمَرَهُۥ", "فَلْيَنظُرِ ٱلْإِنسَٰنُ إِلَى طَعَامِهِۦٓ", "أَنَّا صَبَبْنَا ٱلْمَآءَ صَبًّا", "ثُمَّ شَقَقْنَا ٱلْأَرْضَ شَقًّا", "فَأَنۢبَتْنَا فِيهَا حَبًّا", "وَعِنَبًا وَقَضْبًا", "وَزَيْتُونًا وَنَخْلًا", "وَحَدَآئِقَ غُلْبًا", "وَفَٰكِهَةً وَأَبًّا", "مَّتَٰعًا لَّكُمْ وَلِأَنْعَٰمِكُمْ", "فَإِذَا جَآءَتِ ٱلصَّآخَّةُ", "يَوْمَ يَفِرُّ ٱلْمَرْءُ مِنْ أَخِيهِ", "وَأُمِّهِۦ وَأَبِيهِ", "وَصَٰحِبَتِهِۦ وَبَنِيهِ", "لِكُلِّ ٱمْرِىٍٔ مِّنْهُمْ يَوْمَئِذٍ شَأْنٌ يُغْنِيهِ", "وُجُوهٌ يَوْمَئِذٍ مُّسْفِرَةٌ", "ضَاحِكَةٌ مُّسْتَبْشِرَةٌ", "وَوُجُوهٌ يَوْمَئِذٍ عَلَيْهَا غَبَرَةٌ", "تَرْهَقُهَا قَتَرَةٌ", "أُو۟لَٰٓئِكَ هُمُ ٱلْكَفَرَةُ ٱلْفَجَرَةُ"]});
+
+        const normAr = s => s.replace(/[\u064B-\u065F\u0670\u06D6-\u06ED\u0640]/g, '').replace(/[ٱأإآ]/g, 'ا').replace(/ى/g, 'ي');
+
+        // Build surahs from the complete verse text, in correct ayah order (Arabic only)
+        const surahsData = legacyData.map(s => {
+            const t = QURAN[s.id];
+            if (!t) return { ...s, partial: true };
+            return { ...s, partial: false, ayahs: t.map((full, i) => {
+                const old = s.ayahs[i];
+                return { num: i + 1, full };
+            })};
+        });
+
+        const allWords = [...new Set(surahsData.filter(s => !s.partial).flatMap(s => s.ayahs.flatMap(a => a.full.split(' '))))];
+        const shuffle = arr => arr.map(v => [Math.random(), v]).sort((a, b) => a[0] - b[0]).map(x => x[1]);
+
+        // Blank = an actual word of this ayah, at its real position; distractors come from other words
+        function buildQuestion(surah, ayahIdx) {
+            const full = surah.ayahs[ayahIdx].full;
+            const words = full.split(' ');
+            const ti = (surah.id * 7 + ayahIdx * 3) % words.length;
+            const target = words[ti];
+            const used = new Set(words.map(normAr));
+            const local = surah.ayahs.flatMap(a => a.full.split(' '));
+            const picks = [];
+            for (const w of [...shuffle(local), ...shuffle(allWords)]) {
+                const n = normAr(w);
+                if (!used.has(n)) { used.add(n); picks.push(w); }
+                if (picks.length === 3) break;
+            }
+            return { words, ti, target, choices: shuffle([target, ...picks]) };
+        }
+
+        // GLOBAL APP STATE
+        let currentUser = { uid: '', name: 'Guest User', email: '', isAuthenticated: false, lang: 'en' };
+        let currentSurahIndex = 0;
+        let currentAyahIndex = 0;
+        let activeMode = 'read'; // 'read' | 'recall'
+        let correctAnswersCount = 0;
+        let isAyahAnswered = false;
+        let currentQ = null;
+        let advanceTimeout = null;
+        let recallLocked = false; // Read is locked while a Recall run is in progress
+        let isRegisterSignupMode = true;
+
+        function updateReadLock() {
+            const b = document.getElementById('btnTabRead');
+            b.innerHTML = recallLocked ? 'Read <i class="fa-solid fa-lock"></i>' : 'Read';
+            b.style.opacity = recallLocked ? '0.5' : '1';
+            b.style.cursor = recallLocked ? 'not-allowed' : 'pointer';
+        }
+
+        // Routines & Storage
+        let timerInterval = null;
+        let timerSeconds = 0;
+        // Records are kept per user, per surah: best score, last score, Recall tries, last time, recent history
+        let allRecords = {};
+        try { allRecords = JSON.parse(localStorage.getItem('muqaddam_records_v3') || '{}'); } catch (e) { allRecords = {}; }
+        let routinesStore = {};
+        function bindUserStore() {
+            const key = currentUser.uid || currentUser.email || currentUser.name;
+            if (!allRecords[key]) allRecords[key] = {};
+            routinesStore = allRecords[key];
+            updateKaabaProfileUI();
+        }
+        bindUserStore(); // runs after allRecords exists
+
+        // Audio Feedback Engine
+        let audioCtx = null;
+        function playSound(isCorrect) {
+            try {
+                if (!audioCtx) {
+                    audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+                }
+                if (audioCtx.state === 'suspended') {
+                    audioCtx.resume();
+                }
+                const osc = audioCtx.createOscillator();
+                const gain = audioCtx.createGain();
+                osc.connect(gain);
+                gain.connect(audioCtx.destination);
+
+                if (isCorrect) {
+                    osc.frequency.setValueAtTime(523.25, audioCtx.currentTime); // C5
+                    osc.frequency.exponentialRampToValueAtTime(659.25, audioCtx.currentTime + 0.15); // E5
+                    gain.gain.setValueAtTime(0.2, audioCtx.currentTime);
+                    gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.3);
+                    osc.start();
+                    osc.stop(audioCtx.currentTime + 0.3);
+                } else {
+                    osc.frequency.setValueAtTime(220, audioCtx.currentTime); // A3
+                    osc.frequency.setValueAtTime(160, audioCtx.currentTime + 0.1);
+                    gain.gain.setValueAtTime(0.25, audioCtx.currentTime);
+                    gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.25);
+                    osc.start();
+                    osc.stop(audioCtx.currentTime + 0.25);
+                }
+            } catch(e) {}
+        }
+
+        window.onload = function() {
+            renderNumberedGrid();
+            updateKaabaProfileUI();
+        };
+
+        // KAABA PROFILE MENU & PROGRESS SUMMARY
+        function toggleKaabaMenu(event) {
+            if (event) event.stopPropagation();
+            const menu = document.getElementById('kaabaProfileMenu');
+            if (!menu) return;
+            const willOpen = menu.classList.contains('hidden');
+            if (willOpen) {
+                updateKaabaProfileUI();
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
+        }
+
+        function closeKaabaMenu() {
+            const menu = document.getElementById('kaabaProfileMenu');
+            if (menu) menu.classList.add('hidden');
+        }
+
+        document.addEventListener('click', function(e) {
+            const menu = document.getElementById('kaabaProfileMenu');
+            const logo = document.getElementById('kaabaLogo');
+            if (menu && !menu.classList.contains('hidden') && !menu.contains(e.target) && logo && !logo.contains(e.target)) {
+                menu.classList.add('hidden');
+            }
+        });
+
+        function updateKaabaProfileUI() {
+            const nameEl = document.getElementById('menuUserName');
+            const emailEl = document.getElementById('menuUserEmail');
+            const avatarEl = document.getElementById('menuUserAvatar');
+            const progText = document.getElementById('menuProgressText');
+            const progBar = document.getElementById('menuProgressBar');
+            const avgEl = document.getElementById('menuAvgScore');
+            const triesEl = document.getElementById('menuTotalTries');
+            const logoutLabel = document.getElementById('menuLogoutLabel');
+            if (!nameEl) return;
+
+            nameEl.innerText = currentUser.name || 'Guest User';
+            emailEl.innerText = currentUser.isAuthenticated && currentUser.email ? currentUser.email : 'Not signed in (Guest Mode)';
+
+            if (currentUser.isAuthenticated && currentUser.name) {
+                const initial = currentUser.name.trim().charAt(0).toUpperCase();
+                avatarEl.innerText = initial || 'U';
+                logoutLabel.innerText = 'Log Out';
+            } else {
+                avatarEl.innerHTML = '<i class="fa-solid fa-user"></i>';
+                logoutLabel.innerText = 'Sign In / Register';
+            }
+
+            // Compute overall progress across the 36 surahs
+            const totalSurahs = surahsData.length;
+            let practicedCount = 0;
+            let scoreSum = 0;
+            let totalTries = 0;
+
+            surahsData.forEach(s => {
+                const rec = routinesStore[s.id];
+                if (rec && (rec.tries > 0 || rec.score > 0)) {
+                    practicedCount++;
+                    scoreSum += (rec.score || 0);
+                }
+                if (rec && rec.tries) {
+                    totalTries += rec.tries;
+                }
+            });
+
+            const pct = Math.round((practicedCount / totalSurahs) * 100);
+            const avgScore = practicedCount > 0 ? Math.round(scoreSum / practicedCount) : 0;
+
+            progText.innerText = `${practicedCount} / ${totalSurahs} Surahs`;
+            progBar.style.width = `${pct}%`;
+            avgEl.innerText = `${avgScore}%`;
+            triesEl.innerText = totalTries;
+        }
+
+        async function logoutUser() {
+            closeKaabaMenu();
+            if (currentUser.isAuthenticated && typeof window.firebaseSignOutUser === 'function') {
+                await window.firebaseSignOutUser();
+            }
+            currentUser = { uid: '', name: 'Guest User', email: '', isAuthenticated: false, lang: currentUser.lang };
+            bindUserStore();
+            recallLocked = false;
+            updateReadLock();
+            goToStartPage();
+            showCustomToast('Logged out successfully');
+        }
+
+        // REGISTRATION & EMAIL SIGN-IN MODAL CONTROLS
+        function openRegisterModal(signupMode = true) {
+            isRegisterSignupMode = signupMode;
+            const modal = document.getElementById('registerModal');
+            const errEl = document.getElementById('regErrorMsg');
+            if (errEl) { errEl.classList.add('hidden'); errEl.innerText = ''; }
+            syncRegisterModalMode();
+            modal.classList.remove('hidden');
+            modal.style.display = 'flex';
+        }
+
+        function closeRegisterModal() {
+            const modal = document.getElementById('registerModal');
+            modal.classList.add('hidden');
+            modal.style.display = 'none';
+        }
+
+        function toggleRegisterAuthMode() {
+            isRegisterSignupMode = !isRegisterSignupMode;
+            const errEl = document.getElementById('regErrorMsg');
+            if (errEl) { errEl.classList.add('hidden'); errEl.innerText = ''; }
+            syncRegisterModalMode();
+        }
+
+        function syncRegisterModalMode() {
+            document.getElementById('regModalTitle').innerText = isRegisterSignupMode ? 'Create Your Account' : 'Sign In with Email';
+            document.getElementById('regModalSubtitle').innerText = isRegisterSignupMode
+                ? 'Register to save your Quran memorization progress in the cloud.'
+                : 'Sign in to load your saved progress and scores.';
+            document.getElementById('regNameGroup').style.display = isRegisterSignupMode ? 'block' : 'none';
+            document.getElementById('regSubmitBtn').innerText = isRegisterSignupMode ? 'Create Account & Start' : 'Sign In & Continue';
+            document.getElementById('toggleAuthModeBtn').innerText = isRegisterSignupMode
+                ? 'Already have an account? Sign In'
+                : 'Need an account? Register now';
+        }
+
+        async function submitAccountForm(event) {
+            event.preventDefault();
+            const nameVal = (document.getElementById('regNameInput').value || '').trim();
+            const emailVal = (document.getElementById('regEmailInput').value || '').trim();
+            const passVal = document.getElementById('regPasswordInput').value || '';
+            const errEl = document.getElementById('regErrorMsg');
+            const btn = document.getElementById('regSubmitBtn');
+
+            errEl.classList.add('hidden');
+            btn.disabled = true;
+            const origText = btn.innerText;
+            btn.innerText = isRegisterSignupMode ? 'Creating Account...' : 'Signing In...';
+
+            try {
+                if (isRegisterSignupMode) {
+                    if (typeof window.firebaseRegisterEmail === 'function') {
+                        await window.firebaseRegisterEmail(nameVal, emailVal, passVal);
+                    } else {
+                        throw new Error('Authentication service is still loading. Please try again.');
+                    }
+                } else {
+                    if (typeof window.firebaseSignInEmail === 'function') {
+                        await window.firebaseSignInEmail(emailVal, passVal);
+                    } else {
+                        throw new Error('Authentication service is still loading. Please try again.');
+                    }
+                }
+                closeRegisterModal();
+            } catch (err) {
+                errEl.innerText = (err && err.message) ? err.message.replace('Firebase: ', '') : 'Authentication failed.';
+                errEl.classList.remove('hidden');
+            } finally {
+                btn.disabled = false;
+                btn.innerText = origText;
+            }
+        }
+
+        function showChoice(title, message, options) {
+            const old = document.getElementById('choiceModal');
+            if (old) old.remove();
+            const o = document.createElement('div');
+            o.id = 'choiceModal';
+            o.style.cssText = 'position:fixed;top:0;right:0;bottom:0;left:0;z-index:60;display:flex;align-items:center;justify-content:center;padding:16px;background:rgba(2,6,23,.75)';
+            const card = document.createElement('div');
+            card.className = 'photo-card-frame rounded-3xl p-6 text-center';
+            card.style.cssText = 'width:100%;max-width:340px';
+            card.innerHTML = '<h3 class="text-xl font-extrabold text-gold-gradient" style="margin-bottom:10px"></h3><p class="text-xs text-amber-100/70" style="margin-bottom:28px;line-height:1.6"></p><div style="display:inline-flex;flex-direction:column;gap:12px"></div>';
+            card.children[0].textContent = title;
+            card.children[1].textContent = message;
+            options.forEach(opt => {
+                const b = document.createElement('button');
+                b.className = opt.primary
+                    ? 'py-2.5 bg-gold-gradient text-emeraldDark font-extrabold rounded-xl text-xs shadow-lg'
+                    : 'py-2.5 bg-emeraldDark border border-goldBase/30 text-amber-200 font-bold rounded-xl text-xs';
+                b.style.cssText = 'padding-left:24px;padding-right:24px;text-align:center;white-space:nowrap';
+                b.textContent = opt.label;
+                b.onclick = () => { o.remove(); opt.action(); };
+                card.children[2].appendChild(b);
+            });
+            o.appendChild(card);
+            document.body.appendChild(o);
+        }
+
+        // Open a surah in Read mode without counting a Recall try
+        function openSurahInRead(i) {
+            recallLocked = false;
+            activeMode = 'read';
+            loadSurah(i);
+            switchAppMode('read');
+        }
+
+        function goNextSurahRead() {
+            const next = currentSurahIndex + 1;
+            if (next < surahsData.length) {
+                openSurahInRead(next);
+            } else {
+                recallLocked = false;
+                showChoice('All Surahs Completed', 'You reached the end of the last surah.', [
+                    { label: 'Back to First Surah', primary: true, action: () => openSurahInRead(0) },
+                    { label: 'Retry Recall', action: () => switchAppMode('recall') }
+                ]);
+            }
+        }
+
+        function showCustomToast(msg) {
+            let t = document.getElementById('appToast');
+            if (!t) {
+                t = document.createElement('div');
+                t.id = 'appToast';
+                t.className = 'fixed bottom-6 left-1/2 -translate-x-1/2 z-50 px-4 py-2 rounded-xl bg-gold-gradient text-xs font-extrabold shadow-xl transition-opacity';
+                document.body.appendChild(t);
+            }
+            t.innerText = msg;
+            t.style.opacity = '1';
+            clearTimeout(t._h);
+            t._h = setTimeout(() => { t.style.opacity = '0'; }, 2500);
+        }
+
+        // NAVIGATION SWITCHERS
+        function goToStartPage() {
+            document.body.classList.remove('learning');
+            document.getElementById('startPage').classList.remove('hidden');
+            document.getElementById('mainSystemPage').classList.add('hidden');
+            stopTimer();
+        }
+
+        function launchMainSystem() {
+            document.getElementById('startPage').classList.add('hidden');
+            document.getElementById('mainSystemPage').classList.remove('hidden');
+            document.body.classList.add('learning');
+            loadSurah(currentSurahIndex);
+            if (!recallLocked) switchAppMode('read'); // always open in Read (unless a Recall run is in progress)
+        }
+
+        // AUTH & SETUP SELECTION
+        // Give elements one shared size: the widest and tallest of the group
+        function syncSizes(els) {
+            els.forEach(e => { e.style.width = ''; e.style.height = ''; });
+            const w = Math.max(...els.map(e => e.offsetWidth));
+            const h = Math.max(...els.map(e => e.offsetHeight));
+            if (!w || !h) return; // hidden: measure later
+            els.forEach(e => { e.style.width = w + 'px'; e.style.height = h + 'px'; });
+        }
+        function syncHeaderControls() { syncSizes([document.getElementById('kaabaLogo'), document.getElementById('langSelect')]); }
+        window.addEventListener('load', syncHeaderControls);
+        if (document.fonts && document.fonts.ready) document.fonts.ready.then(syncHeaderControls);
+
+        function syncAuthBox() {
+            const box = document.getElementById('authBox');
+            if (box) box.style.minHeight = '';
+        }
+        window.addEventListener('load', syncAuthBox);
+        window.addEventListener('resize', syncAuthBox);
+
+        function loginGmail() {
+            if (typeof window.firebaseSignInWithGoogle === 'function') {
+                window.firebaseSignInWithGoogle();
+            } else {
+                showCustomToast('Initializing Google Sign-In...');
+            }
+        }
+
+        async function onUserAuthenticated(user, cloudRecords, autoLaunch = true) {
+            const label = user.displayName || (user.email ? user.email.split('@')[0] : 'Gmail User');
+            currentUser.uid = user.uid || '';
+            currentUser.name = label;
+            currentUser.email = user.email || '';
+            currentUser.isAuthenticated = true;
+
+            const key = currentUser.uid || currentUser.email || currentUser.name;
+            if (cloudRecords && typeof cloudRecords === 'object') {
+                allRecords[key] = Object.assign({}, allRecords[key] || {}, cloudRecords);
+                saveStore(false);
+            }
+            bindUserStore();
+            loadRoutinesStats();
+            updateKaabaProfileUI();
+
+            if (autoLaunch) {
+                showCustomToast(`Signed in as ${label}`);
+                launchMainSystem();
+            }
+        }
+
+        function continueGuest() {
+            currentUser.uid = "";
+            currentUser.name = "Guest User";
+            currentUser.email = "";
+            currentUser.isAuthenticated = false;
+            bindUserStore();
+            launchMainSystem(); // guests go straight to Read
+        }
+
+        function changeLanguage() {
+            const lang = document.getElementById('langSelect').value;
+            currentUser.lang = lang;
+        }
+
+        function copyDonationAddress() {
+            const tempInput = document.createElement("input");
+            tempInput.value = "infaq@flowmulamuqaddam.org";
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+            alert("Copied donation address: infaq@flowmulamuqaddam.org");
+        }
+
+        // SURAH & MODE ENGINE
+        function loadSurah(index) {
+            clearTimeout(advanceTimeout);
+            currentSurahIndex = index;
+            currentAyahIndex = 0;
+            correctAnswersCount = 0;
+            const surah = surahsData[currentSurahIndex];
+
+            // Header titles
+            document.getElementById('currentSurahTitle').innerText = surah.name;
+            document.getElementById('currentSurahSub').innerText = `${surah.ayahs.length} Ayahs · ${surah.english}`;
+
+            if (activeMode === 'recall') recordAttempt();
+            startTimer();
+            renderNumberedGrid();
+            renderAyahView();
+            loadRoutinesStats();
+            if (surah.partial) showCustomToast('This surah is still incomplete');
+        }
+
+        function switchAppMode(mode) {
+            if (mode === 'read' && recallLocked) {
+                showCustomToast('Read is locked until you finish Recall');
+                return;
+            }
+            if (mode === 'recall') {
+                // Pressing Recall always restarts from the first ayah
+                clearTimeout(advanceTimeout);
+                recallLocked = true;
+                currentAyahIndex = 0;
+                correctAnswersCount = 0;
+                recordAttempt();
+                startTimer();
+                loadRoutinesStats();
+            }
+            activeMode = mode;
+            
+            const btnRead = document.getElementById('btnTabRead');
+            const btnRel = document.getElementById('btnTabRecall');
+
+            btnRead.className = mode === 'read' ? 'px-4 py-2 rounded-xl text-xs font-extrabold transition bg-gold-gradient text-emeraldDark shadow' : 'px-4 py-2 rounded-xl text-xs font-semibold transition text-amber-200 hover:text-goldBright';
+            btnRel.className = mode === 'recall' ? 'px-4 py-2 rounded-xl text-xs font-extrabold transition bg-gold-gradient text-emeraldDark shadow' : 'px-4 py-2 rounded-xl text-xs font-semibold transition text-amber-200 hover:text-goldBright';
+
+            document.getElementById('recognizeGridContainer').classList.toggle('hidden', mode !== 'recall');
+            document.getElementById('readModeContainer').classList.toggle('hidden', mode !== 'read');
+            document.getElementById('arabicDisplayWrapper').classList.toggle('hidden', mode === 'read');
+
+            const cardLabel = document.getElementById('cardSectionLabel');
+            const icon = document.getElementById('bottomBarIcon');
+
+            if (mode === 'recall') {
+                cardLabel.innerText = "FILL THE BLANK";
+                icon.className = "fa-solid fa-hand-pointer";
+            } else {
+                cardLabel.innerText = "READ & REFLECT";
+                icon.className = "fa-solid fa-book-open";
+            }
+
+            updateReadLock();
+            renderAyahView();
+        }
+
+        function renderAyahView() {
+            const surah = surahsData[currentSurahIndex];
+            const ayah = surah.ayahs[currentAyahIndex];
+            isAyahAnswered = false;
+
+            document.getElementById('bottomStatusTitle').innerText = `Ayah ${currentAyahIndex + 1} of ${surah.ayahs.length}`;
+            const pct = ((currentAyahIndex + 1) / surah.ayahs.length) * 100;
+            document.getElementById('surahProgressBar').style.width = `${pct}%`;
+            document.getElementById('btnPrevAyah').disabled = currentAyahIndex === 0 || activeMode === 'recall';
+            document.getElementById('btnNextAyah').disabled = false;
+
+            const st = document.getElementById('bottomStatusTitle');
+            st.className = 'text-xs font-bold text-amber-200';
+
+            if (activeMode === 'read') {
+                renderReadModeSurah(surah);
+                return;
+            }
+
+            currentQ = buildQuestion(surah, currentAyahIndex);
+            const blankCutout = '<span id="blankCutoutBox" class="blank-target-box"></span>';
+            document.getElementById('arabicVerseDisplay').innerHTML =
+                currentQ.words.map((w, i) => i === currentQ.ti ? blankCutout : w).join(' ');
+
+            const grid = document.getElementById('recognizeGridContainer');
+            grid.innerHTML = '';
+            currentQ.choices.forEach(choice => {
+                const btn = document.createElement('button');
+                btn.dir = 'rtl';
+                btn.className = 'choice-btn-photo font-arabic text-2xl text-amber-100 flex items-center justify-center p-2 cursor-pointer';
+                btn.innerText = choice;
+                btn.onclick = () => selectChoiceAnswer(btn, choice, currentQ.target);
+                grid.appendChild(btn);
+            });
+        }
+
+        function selectChoiceAnswer(btn, chosen, correct) {
+            if (isAyahAnswered) return;
+            isAyahAnswered = true;
+
+            const cutout = document.getElementById('blankCutoutBox');
+            if (cutout) cutout.innerText = correct;
+
+            const choices = document.querySelectorAll('.choice-btn-photo');
+
+            if (chosen === correct) {
+                playSound(true);
+                btn.classList.add('choice-correct');
+                correctAnswersCount++;
+                document.getElementById('bottomStatusTitle').className = "text-xs font-bold text-goldBright";
+            } else {
+                playSound(false);
+                btn.classList.add('choice-incorrect');
+                choices.forEach(b => {
+                    if (b.innerText === correct) b.classList.add('choice-correct');
+                });
+                document.getElementById('bottomStatusTitle').className = "text-xs font-bold text-red-400";
+            }
+        }
+
+        function renderReadModeSurah(surah) {
+            const container = document.getElementById('readModeContainer');
+            container.innerHTML = '';
+
+            let cur = null;
+            surah.ayahs.forEach((ayah, idx) => {
+                const box = document.createElement('div');
+                box.className = 'bg-emeraldDark/90 rounded-2xl border ' + (idx === currentAyahIndex ? 'border-goldBright ring-2 ring-goldBase/50' : 'border-goldBase/20 opacity-70');
+                box.style.cssText = 'display:flex;align-items:center;gap:10px;padding:4px 10px;margin-top:' + (idx ? '12px' : '0');
+                box.innerHTML = `
+                    <div class="text-[10px] text-goldBase font-bold" style="flex:none">${ayah.num}</div>
+                    <div dir="rtl" lang="ar" class="read-ar font-arabic text-amber-100 text-right" style="flex:1">${ayah.full}</div>
+                `;
+                container.appendChild(box);
+            });
+            fitReadWindow(false);
+        }
+
+// The card keeps its size (screen height - 330px). Every ayah box gets the same height, so any
+        // 3 consecutive ayahs fill the card exactly; the Arabic font is the largest size where every ayah of the
+        // surah fits its box. More than 3 ayahs scroll.
+        function fitReadWindow() {
+            const c = document.getElementById('readModeContainer');
+            if (!c || c.offsetParent === null) return;
+            const boxes = Array.from(c.children), n = boxes.length;
+            if (!n) return;
+            const avail = Math.max(window.innerHeight - 330, 120);
+            const gap = 12, pad = 6;
+            const hb = Math.floor((avail - pad - 2 * gap) / 3);
+            c.style.maxHeight = avail + 'px';
+            const ars = boxes.map(b => b.querySelector('.read-ar'));
+            boxes.forEach(b => { b.style.height = 'auto'; });
+            let size = 30;
+            for (; size > 12; size--) {
+                ars.forEach(a => { a.style.fontSize = size + 'px'; a.style.lineHeight = '1.7'; });
+                if (boxes.every(b => b.offsetHeight <= hb)) break;
+            }
+            boxes.forEach(b => { b.style.height = hb + 'px'; });
+            const start = Math.min(currentAyahIndex, Math.max(0, n - 3));
+            c.scrollTop = start * (hb + gap);
+        }
+        window.addEventListener('resize', () => fitReadWindow());
+        if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => fitReadWindow());
+
+        function navigateAyah(dir) {
+            const surah = surahsData[currentSurahIndex];
+            if (activeMode === 'recall' && !isAyahAnswered) {
+                showCustomToast('Choose an answer first');
+                return;
+            }
+            const nextIdx = currentAyahIndex + dir;
+
+            if (nextIdx >= 0 && nextIdx < surah.ayahs.length) {
+                currentAyahIndex = nextIdx;
+                renderAyahView();
+            } else if (nextIdx >= surah.ayahs.length) {
+                if (activeMode === 'read') {
+                    const hasNext = currentSurahIndex + 1 < surahsData.length;
+                    showChoice('Surah Complete', `You reached the last ayah of ${surah.name}.`, [
+                        { label: 'Start Recall', primary: true, action: () => switchAppMode('recall') },
+                        { label: hasNext ? 'Continue Read (Next Surah)' : 'Read Again From Start',
+                          action: () => hasNext ? goNextSurahRead() : openSurahInRead(0) }
+                    ]);
+                    return;
+                }
+                const scorePct = Math.round((correctAnswersCount / surah.ayahs.length) * 100);
+                stopTimer();
+                saveScore(scorePct);
+                recallLocked = false;
+                updateReadLock();
+                const perfect = scorePct === 100;
+                const hasNext = currentSurahIndex + 1 < surahsData.length;
+                showChoice(perfect ? 'Perfect Score!' : 'Recall Finished', `Score: ${scorePct}% (${correctAnswersCount} of ${surah.ayahs.length})`, [
+                    { label: 'Retry Recall', primary: !perfect, action: () => switchAppMode('recall') },
+                    { label: hasNext ? 'Next Surah' : 'Back to First Surah', primary: perfect, action: () => hasNext ? goNextSurahRead() : openSurahInRead(0) }
+                ]);
+            }
+        }
+
+        function openSurahSelectorModal() {
+            const grid = document.getElementById('surahNumberedGrid');
+            grid.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // NUMBERED SURAH SELECTION GRID
+        // After a manual surah pick, bring the Read/Recall card to the top (clear of the sticky header)
+        function scrollToReflect() {
+            const card = document.getElementById('modeCard');
+            card.style.scrollMarginTop = '84px';
+            card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        function renderNumberedGrid() {
+            const grid = document.getElementById('surahNumberedGrid');
+            grid.innerHTML = '';
+
+            surahsData.forEach((s, idx) => {
+                const isSelected = idx === currentSurahIndex;
+
+                const btn = document.createElement('button');
+                btn.onclick = () => { loadSurah(idx); scrollToReflect(); };
+                btn.title = `${s.id}. ${s.name} (${s.english})${s.partial ? ' - incomplete' : ''}`;
+                btn.className = `w-10 h-10 mx-auto rounded-full border flex items-center justify-center font-extrabold text-xs sm:text-sm transition-all duration-200 cursor-pointer ${
+                    isSelected 
+                        ? 'bg-gold-gradient text-emeraldDark border-goldBright scale-110 shadow-lg ring-2 ring-goldBase/50' 
+                        : 'bg-emeraldDark/90 border-goldBase/30 text-goldBright hover:border-goldBright hover:scale-105'
+                }`;
+
+                btn.innerText = s.id;
+                if (s.partial) btn.style.borderStyle = 'dashed';
+                grid.appendChild(btn);
+            });
+        }
+
+        // STATS PERSISTENCE & TIMER
+        function loadRoutinesStats() {
+            const surah = surahsData[currentSurahIndex];
+            const rec = routinesStore[surah.id] || { score: 0, tries: 0, time: 0 };
+            document.getElementById('statScore').innerText = `${rec.score}%`;
+            document.getElementById('statTries').innerText = rec.tries;
+            document.getElementById('statTime').innerText = formatTime(rec.time || 0);
+        }
+
+        function recordAttempt() {
+            const surah = surahsData[currentSurahIndex];
+            if (!routinesStore[surah.id]) routinesStore[surah.id] = { score: 0, last: 0, tries: 0, time: 0, history: [] };
+            routinesStore[surah.id].tries += 1;
+            saveStore();
+        }
+
+        function saveScore(scorePct) {
+            const surah = surahsData[currentSurahIndex];
+            if (!routinesStore[surah.id]) routinesStore[surah.id] = { score: 0, last: 0, tries: 1, time: 0, history: [] };
+            const rec = routinesStore[surah.id];
+            if (scorePct > rec.score) rec.score = scorePct;
+            rec.last = scorePct;
+            rec.time = timerSeconds;
+            rec.history = (rec.history || []).concat({ pct: scorePct, secs: timerSeconds, at: Date.now() }).slice(-20);
+            saveStore();
+        }
+
+        function saveStore(syncCloud = true) {
+            try { localStorage.setItem('muqaddam_records_v3', JSON.stringify(allRecords)); } catch (e) {}
+            updateKaabaProfileUI();
+            if (syncCloud && currentUser.isAuthenticated && currentUser.uid && typeof window.firebaseSaveUserRecords === 'function') {
+                window.firebaseSaveUserRecords(currentUser.uid, currentUser.email, currentUser.name, routinesStore);
+            }
+        }
+
+        function startTimer() {
+            stopTimer();
+            timerSeconds = 0;
+            timerInterval = setInterval(() => {
+                timerSeconds++;
+                document.getElementById('statTime').innerText = formatTime(timerSeconds);
+            }, 1000);
+        }
+
+        function stopTimer() {
+            if (timerInterval) {
+                clearInterval(timerInterval);
+                timerInterval = null;
+            }
+        }
+
+        function formatTime(sec) {
+            const m = Math.floor(sec / 60).toString().padStart(2, '0');
+            const s = (sec % 60).toString().padStart(2, '0');
+            return `${m}:${s}`;
+        }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+    <script>
+        (function(){
+            try {
+                var q = qrcode(0,'M'); q.addData('https://flowmulamuqaddam.org/donate'); q.make();
+                var svg = q.createSvgTag({cellSize:4, margin:2, scalable:true});
+                svg = svg.replace(/fill="black"/g,'fill="#dfb653"').replace(/fill="white"/g,'fill="#04140e"');
+                var el = document.getElementById('donateQR');
+                el.innerHTML = svg;
+                var sv = el.querySelector('svg'); if (sv){ sv.style.width='100%'; sv.style.height='100%'; sv.style.background='#04140e'; }
+            } catch(e) {}
+        })();
+    </script>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import {
+            getAuth,
+            GoogleAuthProvider,
+            signInWithPopup,
+            signInWithCustomToken,
+            createUserWithEmailAndPassword,
+            signInWithEmailAndPassword,
+            updateProfile,
+            signOut,
+            onAuthStateChanged
+        } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+        import {
+            getFirestore,
+            doc,
+            getDoc,
+            setDoc
+        } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+
+        const appId = typeof __app_id !== 'undefined' ? __app_id : 'flowmula-muqaddam';
+        const firebaseConfig = {
+            apiKey: "AIzaSyDM2aU-8CboeSe_GQw58a9qBPJl8BMET3s",
+            authDomain: "flowmula-profiles.firebaseapp.com",
+            projectId: "flowmula-profiles",
+            storageBucket: "flowmula-profiles.firebasestorage.app",
+            messagingSenderId: "179751303832",
+            appId: "1:179751303832:web:993478b9ddebf5a5d3aeed"
+        };
+
+        if (firebaseConfig && firebaseConfig.apiKey) {
+            const app = initializeApp(firebaseConfig);
+            const auth = getAuth(app);
+            const db = getFirestore(app);
+            const googleProvider = new GoogleAuthProvider();
+            googleProvider.setCustomParameters({ prompt: 'select_account' });
+
+            let explicitAuthAction = false;
+
+            const userDocRef = (uid) => doc(db, 'artifacts', appId, 'users', uid, 'profile', 'progress');
+
+            window.firebaseSaveUserRecords = async function(uid, email, displayName, records) {
+                if (!uid || !auth.currentUser) return;
+                try {
+                    await setDoc(userDocRef(uid), {
+                        email: email || '',
+                        displayName: displayName || '',
+                        records: records || {},
+                        updatedAt: Date.now()
+                    }, { merge: true });
+                } catch (err) {
+                    console.warn('Cloud sync deferred:', err);
+                }
+            };
+
+            async function loadCloudRecords(uid) {
+                if (!uid || !auth.currentUser) return null;
+                try {
+                    const snap = await getDoc(userDocRef(uid));
+                    if (snap.exists() && snap.data().records) {
+                        return snap.data().records;
+                    }
+                } catch (err) {
+                    console.warn('Cloud load error:', err);
+                }
+                return null;
+            }
+
+            onAuthStateChanged(auth, async (user) => {
+                if (user && !user.isAnonymous) {
+                    const cloudRecords = await loadCloudRecords(user.uid);
+                    const shouldAutoLaunch = explicitAuthAction || !document.getElementById('startPage').classList.contains('hidden');
+                    explicitAuthAction = false;
+                    await onUserAuthenticated(user, cloudRecords, shouldAutoLaunch);
+                }
+            });
+
+            window.firebaseSignInWithGoogle = async function() {
+                try {
+                    explicitAuthAction = true;
+                    const res = await signInWithPopup(auth, googleProvider);
+                    const cloudRecords = await loadCloudRecords(res.user.uid);
+                    await onUserAuthenticated(res.user, cloudRecords, true);
+                } catch (err) {
+                    explicitAuthAction = false;
+                    if (err && err.code === 'auth/popup-closed-by-user') return;
+                    showCustomToast((err && err.message) ? err.message.replace('Firebase: ', '') : 'Google sign-in failed');
+                }
+            };
+
+            window.firebaseRegisterEmail = async function(displayName, email, password) {
+                explicitAuthAction = true;
+                const cred = await createUserWithEmailAndPassword(auth, email, password);
+                if (displayName) {
+                    await updateProfile(cred.user, { displayName });
+                }
+                await window.firebaseSaveUserRecords(cred.user.uid, email, displayName || email.split('@')[0], {});
+                await onUserAuthenticated({
+                    uid: cred.user.uid,
+                    email: cred.user.email,
+                    displayName: displayName || cred.user.displayName || email.split('@')[0]
+                }, {}, true);
+            };
+
+            window.firebaseSignInEmail = async function(email, password) {
+                explicitAuthAction = true;
+                const cred = await signInWithEmailAndPassword(auth, email, password);
+                const cloudRecords = await loadCloudRecords(cred.user.uid);
+                await onUserAuthenticated(cred.user, cloudRecords, true);
+            };
+
+            window.firebaseSignOutUser = async function() {
+                try {
+                    await signOut(auth);
+                } catch (err) {
+                    console.warn('Sign out error:', err);
+                }
+            };
+        } else {
+            // Fallback local live account storage if environment Firebase config is absent
+            window.firebaseSignInWithGoogle = function() {
+                showCustomToast('Configure Firebase config to enable Google popup.');
+            };
+            window.firebaseRegisterEmail = async function(displayName, email, password) {
+                const users = JSON.parse(localStorage.getItem('muqaddam_local_users') || '{}');
+                if (users[email]) throw new Error('An account with this email already exists. Please Sign In.');
+                const name = displayName || email.split('@')[0];
+                users[email] = { uid: 'local_' + btoa(email), name, email, password };
+                localStorage.setItem('muqaddam_local_users', JSON.stringify(users));
+                await onUserAuthenticated({ uid: users[email].uid, displayName: name, email }, null, true);
+            };
+            window.firebaseSignInEmail = async function(email, password) {
+                const users = JSON.parse(localStorage.getItem('muqaddam_local_users') || '{}');
+                const u = users[email];
+                if (!u || u.password !== password) throw new Error('Invalid email or password.');
+                await onUserAuthenticated({ uid: u.uid, displayName: u.name, email: u.email }, null, true);
+            };
+            window.firebaseSignOutUser = async function() {};
+        }
+    </script>
+</body>
+</html>
